@@ -6,6 +6,22 @@
 
 /* You can override the default Infima variables here. */
 :root {
+  --ifm-color-primary: #3AB7A8;
+  --ifm-color-primary-dark: #29784c;
+  --ifm-color-primary-darker: #277148;
+  --ifm-color-primary-darkest: #205d3b;
+  --ifm-color-primary-light: #33925d;
+  --ifm-color-primary-lighter: #359962;
+  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --text-color: #000000;
+  --background-color: #FFFFFF;
+  --highlight-color: #f08c59;
+}
+
+/*
+:root {
   --ifm-color-primary: #2e8555;
   --ifm-color-primary-dark: #29784c;
   --ifm-color-primary-darker: #277148;
@@ -15,7 +31,10 @@
   --ifm-color-primary-lightest: #3cad6e;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --text-color: #000000;
+  --background-color: #FFFFFF;
 }
+*/
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
@@ -27,4 +46,86 @@
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --text-color: #FFFFFF;
+  --background-color: #000000;
+}
+
+@font-face {
+  font-family: 'Instrument-Serif';
+  src: url('/static/fonts/InstrumentSerif-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+
+.title-font {
+  font-family: 'Inter', sans-serif;
+  font-size: 58px;
+  font-weight: black;
+}
+
+.text-font {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: medium;
+  color: #535353;
+}
+
+.navbar {
+  height: 80px; /* Or whatever height you prefer */
+}
+
+/* Adjust the navbar's internal elements to align correctly with the new height */
+.navbar__inner {
+  height: 100%;
+}
+
+.navbar__items {
+  height: 100%;
+}
+
+.navbar__title {
+  font-family: 'Instrument-Serif', serif;
+  font-size: 28px;
+}
+
+/* set the logo size */
+.navbar__logo img, .navbar__brand img {
+  width: 30px; /* Adjust the width as needed */
+  height: 30px;
+}
+
+.primaryButton {
+  background-color: var(--text-color);
+  color: var(--background-color);
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 5px;
+  border: 2px solid var(--text-color);
+  text-decoration: none;
+}
+
+.secondaryButton {
+  background-color: transparent;
+  color: var(--text-color);
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 5px;
+  border: 2px solid var(--text-color);
+  text-decoration: none;
+}
+
+.highlightButton {
+  background-color: var(--highlight-color);
+  color: var(--background-color);
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 5px;
+  border: 2px solid var(--highlight-color);
+  text-decoration: none;
+}
+
+.image-shadow {
+  box-shadow: 0 0px 16px rgba(0, 0, 0, 0.4); /* Horizontal offset, vertical offset, blur radius, and color */
 }

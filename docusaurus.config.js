@@ -65,29 +65,35 @@ const config = {
     ({
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
+      colorMode: {
+        defaultMode: 'light',
+        disableSwitch: true,
+        respectPrefersColorScheme: true,
+      },
       navbar: {
-        title: 'My Site',
+        title: 'HYPERCERTS',
         logo: {
           alt: 'hypercerts logo',
           src: 'img/hypercerts_logo_b_transparent.png',
         },
         items: [
+          {to: '/ecosystem', label: 'Ecosystem', position: 'right'},
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'Tutorial',
-          },
-          {to: '/blog', label: 'Blog', position: 'left'},
-          {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
             position: 'right',
+            label: 'Docs',
+          },
+          {
+            to: '/ecosystem',
+            position: 'right',
+            label: 'Launch app',
+            className: 'primaryButton',
           },
         ],
       },
       footer: {
-        style: 'dark',
+        style: 'light',
         links: [
           {
             title: 'Docs',
@@ -102,16 +108,12 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: 'Telegram',
+                href: 'https://t.me/+YF9AYb6zCv1mNDJi',
               },
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                href: 'https://twitter.com/hypercerts',
               },
             ],
           },
@@ -129,7 +131,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Hypercerts Foundation, Inc. Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,
