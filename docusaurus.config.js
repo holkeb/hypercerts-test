@@ -68,8 +68,8 @@ const config = {
       navbar: {
         title: 'My Site',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: 'hypercerts logo',
+          src: 'img/hypercerts_logo_b_transparent.png',
         },
         items: [
           {
