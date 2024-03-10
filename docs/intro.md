@@ -1,47 +1,58 @@
 ---
-sidebar_position: 1
+title: What Are Hypercerts?
+id: intro
 ---
 
-# Tutorial Intro
+# What are hypercerts?
 
-Let's discover **Docusaurus in less than 5 minutes**.
+### Hypercerts are a new token standard for tracking and rewarding positive impact.
 
-## Getting Started
+Each hypercert represents a unique impact claim capturing the following information:
 
-Get started by **creating a new site**.
+- a scope of work and its corresponding scope of impact
+- a set of time frames for both the work and its impact
+- a set of contributors – the organization or people behind the work
+- a set of rights you get by owning a hypercert
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+The hypercert itself is an ERC-1155 semi-fungible token with the information above stored as metadata on IPFS. Here’s an example.
 
-### What you'll need
+### Hypercert example
 
-- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+#### Graphic representation
 
-## Generate a new site
+<img src="/img/hypercert_example.png" alt="hypercert design example" width="300"/>
 
-Generate a new Docusaurus site using the **classic template**.
+#### Supplementary information (metadata)
 
-The classic template will automatically be added to your project after you run the command:
+- **Title of hypercert:** Invention of the InterPlanetary Filesystem (IPFS)
+- **Description:** The InterPlanetary File System (IPFS) is a set of composable, peer-to-peer protocols for addressing, routing, and transferring content-addressed data in a decentralized file system.
+- **Link:** ipns://ipfs.tech/
 
-```bash
-npm init docusaurus@latest my-website classic
-```
+#### Hypercert dimensions (metadata)
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+- **Set of contributors:** 0xb794f5ea0ba39494ce839613fffba74279579268 _(example Ethereum address)_
+- **Scope of work:** IPFS ∧ ¬ go-ipfs
+- **Time of work:** 2013-01-01 --> 2013-12-31
+- **Scope of impact:** All
+- **Time of impact:** 2013-01-01 --> indefinite
+- **Rights:** Public display
 
-The command also installs all necessary dependencies you need to run Docusaurus.
+### Why should you care?
 
-## Start your site
+We spend trillions of dollars every year on public goods via governmental agencies, foundations, private donations and corporate spendings; however, we don’t effectively track this work – leaving us in the dark, hoping that it actually has the intended positive impact.
 
-Run the development server:
+We believe we can do better:
 
-```bash
-cd my-website
-npm run start
-```
+- We should start by tracking this work consistently – this is what hypercerts are for.
+- We should evaluate how impactful that work was – this is what the open evaluation system of hypercerts supports.
+- We should reward the work that was exceptionally impactful – this is what the public display of hypercerts and retrospective funding is for.
 
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
+Doing this would unfold powerful incentives. Retrospective funding 1) provides incentives for creators to take on public goods projects with a potentially high, but uncertain, impact, 2) enables feedback loops to learn from successes and failures, and 3) attracts more talent to the public goods sector by improving performance-based compensation.
 
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
+While we are excited about the prospects of retrospective funding, hypercerts do not impose any specific funding mechanisms, but start with tracking the work that is supposed to be impactful. As a database for many funding mechanisms this facilitates experimentation and interoperability between funding mechanisms.
 
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+### Next
+
+Curious and want to learn more? Head over to the [whitepaper](whitepaper/whitepaper-intro.md) to dive deeper into the world of hypercerts.
+
+Or do you want to get started right away? Head to the [minting guide](minting-guide/minting-guide-start.md).

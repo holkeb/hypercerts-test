@@ -12,44 +12,89 @@ function HomepageHeader() {
       description="Hypercerts are the web3 standard for impact certificates <head />">
       <div style={{
           display: 'flex',
-          flexDirection: 'column', // Stack children horizontally
-          alignItems: 'center', // Align children vertically in the middle
-          justifyContent: 'space-between', // Distribute extra space
+          flexDirection: 'column',
+          alignItems: 'center',
+          justifyContent: 'space-between',
           marginLeft: 'auto',
           marginRight: 'auto',
-          marginTop: '100px',
-          maxWidth: '1080px',
+          marginTop: '20px',
+          maxWidth: '800px',
         }}>
+        <div className="child">
+          <h1 class="hero-font">
+          Hypercerts create interconnected funding networks
+          </h1>
+          <p class="text-font">
+            Every hypercert is a public claim on a discrete piece of work and impact resulting from that work. Projects can create hypercerts and distribute them to contributors. Funders can own hypercert fractions — and the rights that come with them. Impact evaluators can create value for projects and funders by assessing the quality of hypercerts and offering ratings.
+          </p>
+          <p class="text-font">
+            Hypercerts create interoperability by serving as a single, open, shared, decentralized database for impact claims and funding mechanisms.
+          </p>
+        </div>
         <div className="responsive-container" style={{
-          alignItems: 'center', // Align children vertically in the middle
-          justifyContent: 'space-between', // Distribute extra space
-        }}>
-          <div className="child" style={{flex: 1, padding: '0 30px'}}> {/* Text content on the left */}
-            <h1 class="title-font">Reward impact with hypercerts</h1>
-            <p class="text-font">
-              To solve the challenges we face this century, we need scalable and
-              sustainable financing models for public goods that reward
-              contributors for the positive impact they create.
-            </p>
-            <div>
-              <Link to="/ecosystem" className="primaryButton">Launch app</Link>
-              <Link to="/ecosystem" className="secondaryButton">Read the docs</Link>
+          alignItems: 'center',
+          justifyContent: 'space-between',
+          }}>
+          <div className="child">
+            <div style={{textAlign: 'center'}}>
+              <img src="/img/gitcoin_logo.png" alt="Hypercerts" style={{ maxWidth: '300px', maxHeight: '100%', width: '60%' }} />
             </div>
           </div>
-          <div className="child" style={{ flex: 1, padding: '0 30px' }}> {/* Image placeholder on the right */}
-            <div style={{
-              border: '0px solid #eee',
-              borderRadius: '8px',
-              padding: '1rem',
-              textAlign: 'center',
-              minHeight: '200px', // Adjust height as necessary
-            }}>
-              <img src="/img/hypercert_example_shadow.png" alt="Hypercerts" style={{ maxWidth: '300px', maxHeight: '100%' }} />
-            </div>
-          </div>    
+          <div className="child">
+            <h2 class="title-font">Hypercerts for Gitcoin</h2>
+            <p class="text-font">
+              Buying hypercerts retrospectively allows funders to increase their funding in relation to the impact created, incentivizing projects to maximize their positive impact. Funders benefit from a large positive impact and incur project risks. Retrospective funding encourages high-risk/high-potential public goods.
+            </p>
+          </div>
         </div>
-          <h1>hyperboard</h1>
-            <HyperboardWidget hyperboardId="83da49f1-f12d-4e10-a772-d7e632d993ef" minWidth="50px" />
+        <div className="responsive-container" style={{
+          alignItems: 'center',
+          justifyContent: 'space-between',
+          }}>
+          <div className="child">
+            <div style={{textAlign: 'center'}}>
+              <img src="/img/voicedeck_logo.png" alt="Hypercerts" style={{ maxWidth: '300px', maxHeight: '100%', width: '60%'  }} />
+            </div>
+          </div>
+          <div className="child">
+            <h2 class="title-font">Voicedeck</h2>
+            <p class="text-font">
+              Buying hypercerts retrospectively allows funders to increase their funding in relation to the impact created, incentivizing projects to maximize their positive impact. Funders benefit from a large positive impact and incur project risks. Retrospective funding encourages high-risk/high-potential public goods.
+            </p>
+          </div>
+        </div>
+        <div className="responsive-container" style={{
+          alignItems: 'center',
+          justifyContent: 'space-between',
+          }}>
+          <div className="child">
+            <div style={{textAlign: 'center'}}>
+              <img src="/img/gainforest_logo.png" alt="Hypercerts" style={{ maxWidth: '300px', maxHeight: '100%', width: '60%'  }} />
+            </div>
+          </div>
+          <div className="child">
+            <h2 class="title-font">Gainforest</h2>
+            <p class="text-font">
+              Buying hypercerts retrospectively allows funders to increase their funding in relation to the impact created, incentivizing projects to maximize their positive impact. Funders benefit from a large positive impact and incur project risks. Retrospective funding encourages high-risk/high-potential public goods.
+            </p>
+          </div>
+        </div>
+        <div className="responsive-container" style={{
+          alignItems: 'center',
+          justifyContent: 'space-between',
+          }}>
+          <div className="child">
+            <div style={{textAlign: 'center'}}>
+              <img src="/img/hyperboards_logo.png" alt="Hypercerts" style={{ maxWidth: '300px', maxHeight: '100%', width: '60%'  }} />
+            </div>
+          </div>
+          <div className="child">
+            <h2 class="title-font">Hyperboards</h2>
+            <p class="text-font">
+              Buying hypercerts retrospectively allows funders to increase their funding in relation to the impact created, incentivizing projects to maximize their positive impact. Funders benefit from a large positive impact and incur project risks. Retrospective funding encourages high-risk/high-potential public goods.
+            </p>
+          </div>
+        </div>
       </div>
     </Layout>
   );

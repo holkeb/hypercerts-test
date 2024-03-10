@@ -8,8 +8,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'Hypercerts Foundation',
+  tagline: 'Hypercerts are the web3 standard for impact certificates.',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -20,8 +20,8 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'Hypercerts Foundation', // Usually your GitHub org/user name.
+  projectName: 'hypercerts', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -78,6 +78,17 @@ const config = {
         },
         items: [
           {
+            to: '/',
+            activeBaseRegex: '^/$',
+            label: 'Overview',
+            position: 'right',
+          },
+          {
+          type: 'html',
+          position: 'right',
+          value: `<div class="navbar__separator"></div>`,
+          },
+          {
             to: '/ecosystem',
             label: 'Ecosystem',
             position: 'right',
@@ -88,8 +99,18 @@ const config = {
           value: `<div class="navbar__separator"></div>`,
           },
           {
+            to: '/contributors',
+            label: 'Contributors',
+            position: 'right',
+          },
+          {
+          type: 'html',
+          position: 'right',
+          value: `<div class="navbar__separator"></div>`,
+          },
+          {
             type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            sidebarId: 'mySidebar',
             position: 'right',
             label: 'Docs',
           },
@@ -103,19 +124,46 @@ const config = {
       },
       footer: {
         style: 'light',
+        logo: {
+          alt: 'Hypercerts logo',
+          src: 'img/hypercerts_logo_b_transparent.png',
+          href: 'https://hypercerts.org',
+          width: '50px',
+          height: '50px',
+        },
         links: [
           {
-            title: 'Docs',
+            title: 'Site',
             items: [
               {
-                label: 'Tutorial',
+                label: 'Overview',
+                to: '/',
+              },
+              {
+                label: 'Ecosystem',
+                to: '/ecosystem',
+              },
+              {
+                label: 'Contributors',
+                to: '/contributors',
+              },
+              {
+                label: 'Docs',
                 to: '/docs/intro',
               },
             ],
           },
           {
-            title: 'Community',
+            title: 'More',
             items: [
+              {
+                label: 'Discord',
+                href: 'https://discord.gg/UZt8cBnP4w',
+              },
+              {
+                label: 'GitHub',
+                href: 'https://github.com/facebook/docusaurus',
+              },
               {
                 label: 'Telegram',
                 href: 'https://t.me/+YF9AYb6zCv1mNDJi',
@@ -126,21 +174,12 @@ const config = {
               },
             ],
           },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
-              },
-            ],
-          },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Hypercerts Foundation, Inc. Built with Docusaurus.`,
+        copyright: `
+        <a href="/privacy">Privacy policy</a> |
+        <a href="/terms">Terms of use</a> <br>
+          Copyright © ${new Date().getFullYear()} Hypercerts Foundation
+          `,
       },
       prism: {
         theme: prismThemes.github,

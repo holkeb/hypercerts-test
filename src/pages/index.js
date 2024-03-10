@@ -9,22 +9,22 @@ function HomepageHeader() {
   return (
     <Layout
       title="hypercerts overview"
-      description="Hypercerts are the web3 standard for impact certificates <head />">
+      description="Hypercerts are the web3 standard for impact certificates">
       <div style={{
           display: 'flex',
-          flexDirection: 'column', // Stack children horizontally
-          alignItems: 'center', // Align children vertically in the middle
-          justifyContent: 'space-between', // Distribute extra space
+          flexDirection: 'column',
+          alignItems: 'center',
+          justifyContent: 'space-between',
           marginLeft: 'auto',
           marginRight: 'auto',
           marginTop: '20px',
           maxWidth: '800px',
         }}>
         <div className="responsive-container" style={{
-          alignItems: 'center', // Align children vertically in the middle
-          justifyContent: 'space-between', // Distribute extra space
+          alignItems: 'center',
+          justifyContent: 'space-between',
         }}>
-          <div className="child"> {/* Text content on the left */}
+          <div className="child">
             <h1 class="hero-font">Reward impact with hypercerts</h1>
             <p class="text-font">
               To solve the challenges we face this century, we need scalable and
@@ -36,13 +36,13 @@ function HomepageHeader() {
               <Link to="/ecosystem" className="secondaryButton">Read the docs</Link>
             </div>
           </div>
-          <div className="child"> {/* Image placeholder on the right */}
+          <div className="child">
             <div style={{textAlign: 'center'}}>
               <img src="/img/hypercert_example_shadow.png" alt="Hypercerts" style={{ maxWidth: '300px', maxHeight: '100%' }} />
             </div>
           </div>
         </div>
-        <div className="child">
+        <div className="child" style={{marginTop: '100px'}}>
           <h1 class="title-font">
             Hypercerts are a new protocol for funding and rewarding positive impact
           </h1>
@@ -54,10 +54,10 @@ function HomepageHeader() {
           </p>
         </div>
         <div className="responsive-container" style={{
-          alignItems: 'center', // Align children vertically in the middle
-          justifyContent: 'space-between', // Distribute extra space
+          alignItems: 'center',
+          justifyContent: 'space-between',
         }}>
-        <div className="child"> {/* Image placeholder on the right */}
+        <div className="child">
             <div style={{textAlign: 'center'}}>
               <img src="/img/recurring_income.svg" alt="Hypercerts" style={{ maxWidth: '300px', maxHeight: '100%' }} />
             </div>
@@ -70,10 +70,10 @@ function HomepageHeader() {
           </div>
         </div>
         <div className="responsive-container" style={{
-          alignItems: 'center', // Align children vertically in the middle
-          justifyContent: 'space-between', // Distribute extra space
+          alignItems: 'center',
+          justifyContent: 'space-between',
         }}>
-        <div className="child"> {/* Image placeholder on the right */}
+        <div className="child">
             <div style={{textAlign: 'center'}}>
               <img src="/img/increasing_rewards.svg" alt="Hypercerts" style={{ maxWidth: '300px', maxHeight: '100%' }} />
             </div>
@@ -86,10 +86,10 @@ function HomepageHeader() {
           </div>
         </div>
         <div className="responsive-container" style={{
-          alignItems: 'center', // Align children vertically in the middle
-          justifyContent: 'space-between', // Distribute extra space
+          alignItems: 'center',
+          justifyContent: 'space-between',
         }}>
-        <div className="child"> {/* Image placeholder on the right */}
+        <div className="child">
             <div style={{textAlign: 'center'}}>
               <img src="/img/impact_bridge.svg" alt="Hypercerts" style={{ maxWidth: '300px', maxHeight: '100%' }} />
             </div>

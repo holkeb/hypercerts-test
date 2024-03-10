@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 
-const HyperboardWidget = ({ hyperboardId, minWidth = '300px'}) => {
+const HyperboardWidget = ({ hyperboardId, minWidth = '300px', width = '100%'}) => {
   // Use useRef to refer to the div where the widget will be initialized.
   const widgetRef = useRef(null);
 
@@ -24,10 +24,10 @@ const HyperboardWidget = ({ hyperboardId, minWidth = '300px'}) => {
   }, [hyperboardId]); // Depend on hyperboardId to re-run the effect if the ID changes.
 
   return (
-    <div 
-      ref={widgetRef} 
+    <div
+      ref={widgetRef}
       className="hyperboard-widget"
-      style={{ width: '100%', minWidth: minWidth }}
+      style={{ width: width, minWidth: minWidth }}
     ></div>
   );
 };

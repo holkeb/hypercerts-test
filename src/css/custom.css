@@ -162,6 +162,11 @@
   }
 }
 
+.col.footer__col {
+  width: 180px;
+  flex: 0 0 auto;
+}
+
 .primaryButton {
   background-color: var(--text-color);
   color: var(--background-color);
