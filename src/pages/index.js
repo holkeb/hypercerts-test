@@ -32,8 +32,8 @@ function HomepageHeader() {
               contributors for the positive impact they create.
             </p>
             <div>
-              <Link to="/ecosystem" className="primaryButton">Launch app</Link>
-              <Link to="/ecosystem" className="secondaryButton">Read the docs</Link>
+            <a href="https://hypercerts.org/app/create#name=The%20name%20of%20your%20hypercert&logoUrl=https%3A%2F%2Fi.imgur.com%2FsDQhp3Y.png&bannerUrl=https%3A%2F%2Fi.imgur.com%2FwsM3fWd.jpeg&impactScopes%5B0%5D=all&impactTimeEnd=indefinite&workScopes=your%20project&workTimeStart=2023-01-01&rights%5B0%5D=Public%20Display&backgroundColor=blue&backgroundVectorArt=contours" className="primaryButton" target="_blank" rel="noopener noreferrer">Launch app</a>
+              <Link to="/docs/intro" className="secondaryButton">Read the docs</Link>
             </div>
           </div>
           <div className="child">

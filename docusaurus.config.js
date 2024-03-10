@@ -115,7 +115,7 @@ const config = {
             label: 'Docs',
           },
           {
-            to: '/ecosystem',
+            href: 'https://hypercerts.org/app/create#name=The%20name%20of%20your%20hypercert&logoUrl=https%3A%2F%2Fi.imgur.com%2FsDQhp3Y.png&bannerUrl=https%3A%2F%2Fi.imgur.com%2FwsM3fWd.jpeg&impactScopes%5B0%5D=all&impactTimeEnd=indefinite&workScopes=your%20project&workTimeStart=2023-01-01&rights%5B0%5D=Public%20Display&backgroundColor=blue&backgroundVectorArt=contours',
             position: 'right',
             label: 'Launch app',
             className: 'menuButton',
@@ -162,7 +162,7 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/hypercerts-org/hypercerts',
               },
               {
                 label: 'Telegram',
