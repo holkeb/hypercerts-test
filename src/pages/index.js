@@ -38,8 +38,8 @@ function HomepageHeader() {
               contributors for the positive impact they create.
             </p>
             <div>
-              <Link to="/app" className="primaryButton">Launch app</Link>
-              <Link to="/docs" className="secondaryButton">Read the docs</Link>
+              <Link to="/ecosystem" className="primaryButton">Launch app</Link>
+              <Link to="/ecosystem" className="secondaryButton">Read the docs</Link>
             </div>
           </div>
           <div style={{ flex: 1 }}> {/* Image placeholder on the right */}
