@@ -1,11 +1,8 @@
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import HyperboardWidget from '@site/src/components/HyperboardWidget';
 
-import Heading from '@theme/Heading';
 import styles from './index.module.css';
 
 function HomepageHeader() {
@@ -54,6 +51,8 @@ function HomepageHeader() {
             </div>
           </div>    
         </div>
+          <h1>hyperboard</h1>
+            <HyperboardWidget hyperboardId="83da49f1-f12d-4e10-a772-d7e632d993ef" minWidth="50px" />
       </div>
     </Layout>
   );
