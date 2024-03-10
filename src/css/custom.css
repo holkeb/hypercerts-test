@@ -8,11 +8,34 @@
   display: flex;
   flex-wrap: wrap;
   max-width: 100%;
+  padding: 40px 0px;
 }
 
 .child {
   flex: 1;
   min-width: 300px; /* Adjust based on your content */
+  padding: 20px;
+}
+
+.transparentContainer {
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+}
+
+.transparentContainer::before {
+  content: "";
+  background-image: url('/img/bg_centered_star.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.4; /* Adjust transparency here */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
 }
 
 @media (max-width: 768px) {
@@ -79,9 +102,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
 
-.title-font {
+.hero-font {
   font-family: 'Inter', sans-serif;
   font-size: 58px;
+  font-weight: 900;
+  line-height: 1.1;
+}
+
+.title-font {
+  font-family: 'Inter', sans-serif;
   font-weight: 900;
   line-height: 1.1;
 }
@@ -95,6 +124,7 @@
 
 .navbar {
   height: 80px; /* Or whatever height you prefer */
+  border-bottom: 1px solid #000000;
 }
 
 /* Adjust the navbar's internal elements to align correctly with the new height */
@@ -117,6 +147,21 @@
   height: 30px;
 }
 
+.navbar__separator {
+  display: inline-block;
+  width: 1px; /* Adjust the width of the separator line as needed */
+  height: 20px; /* Adjust the height to match your navbar height */
+  background-color: #999; /* Color of the separator line */
+  margin: 0 8px; /* Space on the left and right of the separator */
+  vertical-align: middle; /* Align the separator vertically if needed */
+}
+
+@media (max-width: 996px) {
+  .navbar__separator {
+    display: none;
+  }
+}
+
 .primaryButton {
   background-color: var(--text-color);
   color: var(--background-color);
@@ -135,6 +180,21 @@
   border-radius: 5px;
   border: 2px solid var(--text-color);
   text-decoration: none;
+}
+
+.menuButton {
+  background-color: var(--text-color);
+  color: var(--background-color);
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 2px solid var(--text-color);
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .menuButton {
+    margin-left: 30px; /* Adjust the value as needed */
+  }
 }
 
 .highlightButton {

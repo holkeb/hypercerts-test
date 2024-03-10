@@ -77,7 +77,16 @@ const config = {
           src: 'img/hypercerts_logo_b_transparent.png',
         },
         items: [
-          {to: '/ecosystem', label: 'Ecosystem', position: 'right'},
+          {
+            to: '/ecosystem',
+            label: 'Ecosystem',
+            position: 'right',
+          },
+          {
+          type: 'html',
+          position: 'right',
+          value: `<div class="navbar__separator"></div>`,
+          },
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
@@ -88,7 +97,7 @@ const config = {
             to: '/ecosystem',
             position: 'right',
             label: 'Launch app',
-            className: 'primaryButton',
+            className: 'menuButton',
           },
         ],
       },
