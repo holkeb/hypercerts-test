@@ -7,7 +7,7 @@ id: whitepaper-intro
 
 :::note
 
-If you prefer to read the draft whitepaper (v0) as a pdf, you can find it [here](../../static/pdf/hypercerts_whitepaper_v0.pdf). The content is mostly identical to the following pages.
+If you prefer to read the draft whitepaper (v0) as a pdf, you can find it [here](/pdf/hypercerts_whitepaper_v0.pdf). The content is mostly identical to the following pages.
 
 :::
 
