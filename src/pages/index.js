@@ -53,7 +53,7 @@ function HomepageHeader() {
           </div>    
         </div>
           <h1>hyperboard</h1>
-            <HyperboardWidget hyperboardId="83da49f1-f12d-4e10-a772-d7e632d993ef" minWidth="400px" />
+            <HyperboardWidget hyperboardId="83da49f1-f12d-4e10-a772-d7e632d993ef" minWidth="200px" />
       </div>
     </Layout>
   );
