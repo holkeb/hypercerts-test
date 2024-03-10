@@ -22,7 +22,7 @@ function HomepageHeader() {
         }}>
         <div className="child">
           <h1 class="hero-font">
-          Hypercerts create interconnected funding networks
+          Hypercerts create dynamic funding networks
           </h1>
           <p class="text-font">
             Every hypercert is a public claim on a discrete piece of work and impact resulting from that work. Projects can create hypercerts and distribute them to contributors. Funders can own hypercert fractions — and the rights that come with them. Impact evaluators can create value for projects and funders by assessing the quality of hypercerts and offering ratings.
