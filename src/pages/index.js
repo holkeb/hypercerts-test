@@ -17,14 +17,14 @@ function HomepageHeader() {
           justifyContent: 'space-between', // Distribute extra space
           marginLeft: 'auto',
           marginRight: 'auto',
-          marginTop: '100px',
+          marginTop: '20px',
           maxWidth: '1080px',
         }}>
         <div className="responsive-container" style={{
           alignItems: 'center', // Align children vertically in the middle
           justifyContent: 'space-between', // Distribute extra space
         }}>
-          <div className="child" style={{flex: 1, padding: '0 30px'}}> {/* Text content on the left */}
+          <div className="child" style={{flex: 1, padding: '30px'}}> {/* Text content on the left */}
             <h1 class="title-font">Reward impact with hypercerts</h1>
             <p class="text-font">
               To solve the challenges we face this century, we need scalable and
@@ -36,7 +36,7 @@ function HomepageHeader() {
               <Link to="/ecosystem" className="secondaryButton">Read the docs</Link>
             </div>
           </div>
-          <div className="child" style={{ flex: 1, padding: '0 30px' }}> {/* Image placeholder on the right */}
+          <div className="child" style={{ flex: 1, padding: '30px' }}> {/* Image placeholder on the right */}
             <div style={{
               border: '0px solid #eee',
               borderRadius: '8px',
