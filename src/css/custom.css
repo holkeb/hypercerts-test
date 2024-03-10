@@ -4,6 +4,24 @@
  * work well for content-centric websites.
  */
 
+.responsive-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+
+.child {
+  flex: 1;
+  min-width: 300px; /* Adjust based on your content */
+}
+
+@media (max-width: 768px) {
+  .responsive-container {
+    flex-direction: column;
+  }
+}
+
+
 /* You can override the default Infima variables here. */
 :root {
   --ifm-color-primary: #3AB7A8;
@@ -35,6 +53,8 @@
   --background-color: #FFFFFF;
 }
 */
+
+
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
