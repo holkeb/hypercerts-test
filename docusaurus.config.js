@@ -89,6 +89,16 @@ const config = {
           value: `<div class="navbar__separator"></div>`,
           },
           {
+            to: '/how-it-works',
+            label: 'How it works',
+            position: 'right',
+          },
+          {
+          type: 'html',
+          position: 'right',
+          value: `<div class="navbar__separator"></div>`,
+          },
+          {
             to: '/ecosystem',
             label: 'Ecosystem',
             position: 'right',

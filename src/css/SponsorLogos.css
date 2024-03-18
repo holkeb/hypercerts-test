@@ -1,0 +1,23 @@
+.sponsorLogosContainer {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.scrollingLogos {
+  display: flex; /* Changed to flex to better manage child elements */
+  animation: scroll-logos 20s linear infinite; /* Adjust time for your needs */
+}
+
+@keyframes scroll-logos {
+  from { transform: translateX(0); }
+  to { transform: translateX(-180%); }
+}
+
+.logo {
+  flex: 0 0 auto; /* Added to ensure logos don't shrink or grow */
+  height: 30px;
+  margin-right: 40px;
+  vertical-align: middle;
+  filter: grayscale(100%);
+}

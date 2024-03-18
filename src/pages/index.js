@@ -2,6 +2,7 @@ import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import Layout from '@theme/Layout';
 import HyperboardWidget from '@site/src/components/HyperboardWidget';
+import SponsorLogos from '@site/src/components/SponsorLogos.js';
 
 import styles from './index.module.css';
 
@@ -41,8 +42,11 @@ function HomepageHeader() {
               <img src="/img/hypercert_example_shadow.png" alt="Hypercerts" style={{ maxWidth: '300px', maxHeight: '100%' }} />
             </div>
           </div>
+          <div className="child" style={{marginTop: '70px'}}>
+            <SponsorLogos />
+          </div>
         </div>
-        <div className="child" style={{marginTop: '100px'}}>
+        <div className="child" style={{marginTop: '70px'}}>
           <h1 class="title-font">
             Hypercerts are a new protocol for funding and rewarding positive impact
           </h1>
