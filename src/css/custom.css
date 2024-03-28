@@ -3,6 +3,7 @@
  * bundles Infima by default. Infima is a CSS framework designed to
  * work well for content-centric websites.
  */
+
  .heroBanner {
    padding: 4rem 0;
    text-align: center;
@@ -26,13 +27,13 @@
   display: flex;
   flex-wrap: wrap;
   max-width: 100%;
-  padding: 40px 0px;
+  padding: 0px;
 }
 
 .child {
   flex: 1;
   min-width: 300px; /* Adjust based on your content */
-  padding: 20px;
+  padding: 0px;
 }
 
 .transparentContainer {
@@ -121,10 +122,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
 
 .hero-font {
-  font-family: 'Inter', sans-serif;
-  font-size: 58px;
-  font-weight: 900;
+  font-family: 'Instrument-Serif';
+  font-size: 72px;
+  font-weight: 500;
   line-height: 1.1;
+  text-transform: lowercase;
+  max-width: 800px;
+  text-align: center;
+  margin-top: 30px;
+  margin-left: auto; 
+  margin-right: auto; 
 }
 
 .title-font {
@@ -141,12 +148,14 @@
 }
 
 .navbar {
-  height: 80px; /* Or whatever height you prefer */
-  border-bottom: 1px solid #000000;
+  height: 80px; 
+  box-shadow: none !important;
 }
 
 /* Adjust the navbar's internal elements to align correctly with the new height */
 .navbar__inner {
+  display: flex;
+  justify-content: space-between;
   height: 100%;
 }
 
@@ -159,19 +168,18 @@
   font-size: 28px;
 }
 
-/* set the logo size */
 .navbar__logo img, .navbar__brand img {
-  width: 30px; /* Adjust the width as needed */
+  width: 30px;
   height: 30px;
 }
 
-.navbar__separator {
-  display: inline-block;
-  width: 1px; /* Adjust the width of the separator line as needed */
-  height: 20px; /* Adjust the height to match your navbar height */
-  background-color: #999; /* Color of the separator line */
-  margin: 0 8px; /* Space on the left and right of the separator */
-  vertical-align: middle; /* Align the separator vertically if needed */
+.navbar__items--left {
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.navbar__items--right {
+  flex-grow: 0;
 }
 
 @media (max-width: 996px) {
@@ -209,7 +217,7 @@
   background-color: var(--text-color);
   color: var(--background-color);
   padding: 10px 15px;
-  border-radius: 5px;
+  border-radius: 10px;
   border: 2px solid var(--text-color);
   text-decoration: none;
 }

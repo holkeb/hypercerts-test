@@ -3,6 +3,7 @@ import Link from '@docusaurus/Link';
 import Layout from '@theme/Layout';
 import HyperboardWidget from '@site/src/components/HyperboardWidget';
 import SponsorLogos from '@site/src/components/SponsorLogos.js';
+import SponsorLogos2 from '@site/src/components/SponsorLogos2.js';
 
 import styles from './index.module.css';
 
@@ -21,31 +22,34 @@ function HomepageHeader() {
           marginTop: '20px',
           maxWidth: '800px',
         }}>
-        <div className="responsive-container" style={{
-          alignItems: 'center',
-          justifyContent: 'space-between',
-        }}>
-          <div className="child">
-            <h1 class="hero-font">Reward impact with hypercerts</h1>
-            <p class="text-font">
-              To solve the challenges we face this century, we need scalable and
-              sustainable financing models for public goods that reward
-              contributors for the positive impact they create.
-            </p>
-            <div>
-            <a href="https://hypercerts.org/app/create#name=The%20name%20of%20your%20hypercert&logoUrl=https%3A%2F%2Fi.imgur.com%2FsDQhp3Y.png&bannerUrl=https%3A%2F%2Fi.imgur.com%2FwsM3fWd.jpeg&impactScopes%5B0%5D=all&impactTimeEnd=indefinite&workScopes=your%20project&workTimeStart=2023-01-01&rights%5B0%5D=Public%20Display&backgroundColor=blue&backgroundVectorArt=contours" className="primaryButton" target="_blank" rel="noopener noreferrer">Launch app</a>
-              <Link to="/docs/intro" className="secondaryButton">Read the docs</Link>
-            </div>
-          </div>
-          <div className="child">
-            <div style={{textAlign: 'center'}}>
-              <img src="/img/hypercert_example_shadow.png" alt="Hypercerts" style={{ maxWidth: '300px', maxHeight: '100%' }} />
-            </div>
-          </div>
-          <div className="child" style={{marginTop: '70px'}}>
-            <SponsorLogos />
-          </div>
+
+        {/* hero banner */}
+        <div style={{
+          textAlign: 'center', 
+          backgroundSize: 'cover',
+          backgroundImage: 'url(/img/hypercerts_key_visual.png)',
+          backgroundPosition: 'center',
+          width: '100%',
+          }}>
+          <h1 class="hero-font">Reward and fund impact</h1>
+          <img src="/img/hypercert_example.png" alt="Hypercerts" style={{ maxWidth: '300px', maxHeight: '100%' }} />
         </div>
+
+        {/* partner logos */}
+        <div className="child" style={{marginTop: '0px'}}>
+          <SponsorLogos2 />
+        </div>
+      </div>
+      <div style={{
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        marginLeft: 'auto',
+        marginRight: 'auto',
+        marginTop: '20px',
+        maxWidth: '800px',
+        }}>
         <div className="child" style={{marginTop: '70px'}}>
           <h1 class="title-font">
             Hypercerts are a new protocol for funding and rewarding positive impact

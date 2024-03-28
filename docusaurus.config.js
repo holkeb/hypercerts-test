@@ -78,56 +78,25 @@ const config = {
         },
         items: [
           {
-            to: '/',
-            activeBaseRegex: '^/$',
-            label: 'Overview',
-            position: 'right',
-          },
-          {
-          type: 'html',
-          position: 'right',
-          value: `<div class="navbar__separator"></div>`,
-          },
-          {
             to: '/how-it-works',
             label: 'How it works',
-            position: 'right',
-          },
-          {
-          type: 'html',
-          position: 'right',
-          value: `<div class="navbar__separator"></div>`,
+            position: 'left',
           },
           {
             to: '/ecosystem',
             label: 'Ecosystem',
-            position: 'right',
-          },
-          {
-          type: 'html',
-          position: 'right',
-          value: `<div class="navbar__separator"></div>`,
-          },
-          {
-            to: '/contributors',
-            label: 'Contributors',
-            position: 'right',
-          },
-          {
-          type: 'html',
-          position: 'right',
-          value: `<div class="navbar__separator"></div>`,
+            position: 'left',
           },
           {
             type: 'docSidebar',
             sidebarId: 'mySidebar',
-            position: 'right',
+            position: 'left',
             label: 'Docs',
           },
           {
             href: 'https://hypercerts.org/app/create#name=The%20name%20of%20your%20hypercert&logoUrl=https%3A%2F%2Fi.imgur.com%2FsDQhp3Y.png&bannerUrl=https%3A%2F%2Fi.imgur.com%2FwsM3fWd.jpeg&impactScopes%5B0%5D=all&impactTimeEnd=indefinite&workScopes=your%20project&workTimeStart=2023-01-01&rights%5B0%5D=Public%20Display&backgroundColor=blue&backgroundVectorArt=contours',
             position: 'right',
-            label: 'Launch app',
+            label: 'Go to app',
             className: 'menuButton',
           },
         ],

@@ -2,11 +2,13 @@
   overflow: hidden;
   white-space: nowrap;
   width: 100%;
+  padding: 10px;
+  border: solid 1px black;
 }
 
 .scrollingLogos {
   display: flex; /* Changed to flex to better manage child elements */
-  animation: scroll-logos 20s linear infinite; /* Adjust time for your needs */
+  animation: scroll-logos 20s linear infinite; /* Adjust time for your needs */;
 }
 
 @keyframes scroll-logos {
