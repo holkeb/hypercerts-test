@@ -1,17 +1,25 @@
+import React, { useState } from 'react';
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import Layout from '@theme/Layout';
 import HyperboardWidget from '@site/src/components/HyperboardWidget';
 import SponsorLogos from '@site/src/components/SponsorLogos.js';
-import SponsorLogos2 from '@site/src/components/SponsorLogos2.js';
 
 import styles from './index.module.css';
 
 function HomepageHeader() {
+  const [selectedButton, setSelectedButton] = useState(1);
+
+  const buttonContent = [
+    "Projects",
+    "Evaluators",
+    "Funding platforms",
+    "Everyone",
+  ];
   return (
     <Layout
       title="hypercerts overview"
-      description="Hypercerts are the web3 standard for impact certificates">
+      description="Reward and fund impact with hypercerts">
       <div style={{
           display: 'flex',
           flexDirection: 'column',
@@ -31,15 +39,20 @@ function HomepageHeader() {
           backgroundPosition: 'center',
           width: '100%',
           }}>
-          <h1 class="hero-font">Reward and fund impact</h1>
-          <img src="/img/hypercert_example.png" alt="Hypercerts" style={{ maxWidth: '300px', maxHeight: '100%' }} />
+          <h1 class="hero-font" style={{
+          marginTop: '50px',
+          }}>
+            Reward and fund impact</h1>
+          <img src="/img/hypercert_example.png" alt="Hypercerts" style={{ maxWidth: '300px', maxHeight: '100%', marginBottom: '30px' }} />
         </div>
 
         {/* partner logos */}
         <div className="child" style={{marginTop: '0px'}}>
-          <SponsorLogos2 />
+          <SponsorLogos />
         </div>
       </div>
+
+      {/* Main body */}
       <div style={{
         display: 'flex',
         flexDirection: 'column',
@@ -47,16 +60,236 @@ function HomepageHeader() {
         justifyContent: 'space-between',
         marginLeft: 'auto',
         marginRight: 'auto',
+        padding: '10px',
         marginTop: '20px',
         maxWidth: '800px',
         }}>
-        <div className="child" style={{marginTop: '70px'}}>
+
+        {/* longer introduction */}  
+        <div className="child" style={{marginTop: '70px' }}>
           <h1 class="title-font">
             Hypercerts are a new protocol for funding and rewarding positive impact
           </h1>
-          <p class="text-font">
-            Every hypercert is a public claim on a discrete piece of work and impact resulting from that work. Projects can create hypercerts and distribute them to contributors. Funders can own hypercert fractions — and the rights that come with them. Impact evaluators can create value for projects and funders by assessing the quality of hypercerts and offering ratings.
+          <p class="text-centered" style={{maxWidth: '500px', marginLeft: 'auto', marginRight: 'auto'}}>
+            To solve the challenges we face this century, we need scalable and 
+            sustainable financing models for public goods that reward contributors 
+            for the positive impact they create.
           </p>
+        </div>
+      </div>
+
+        {/* what is a hypercert */}  
+      <div style={{
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        textAlign: 'center',
+        marginLeft: 'auto',
+        marginRight: 'auto',
+        padding: '10px',
+        marginTop: '20px',
+        maxWidth: '100%',
+        }}>
+        <div className="child" style={{
+          marginTop: '70px',
+          background: 'linear-gradient(to bottom, white, #ececec)',
+          borderRadius: '10px', 
+          width: '100%'}}>
+          <img src="/img/hypercert_example.png" alt="Hypercerts" style={{ maxWidth: '300px', maxHeight: '100%' }} />
+        </div>
+        
+        {/* who is hypercerts for */}  
+        <div className="child" style={{
+        marginTop: '70px',
+        }}>
+          <p class="text-centered" style={{maxWidth: '500px', marginLeft: 'auto', marginRight: 'auto'}}>
+            Build to strengthen
+          </p>
+          <h1 class="hero-font">
+            Collective goods
+          </h1>
+        </div>
+        {/* Buttons Row */}
+      <div style={{
+        display: 'flex',
+        justifyContent: 'center', 
+        marginTop: '20px',
+      }}>
+        {[1, 2, 3, 4].map((buttonNumber) => (
+          <button
+            key={buttonNumber}
+            onClick={() => setSelectedButton(buttonNumber)}
+            style={{
+              margin: '0 0px', // Add some space around the buttons
+              padding: '10px 20px', // Add padding to make buttons bigger
+              backgroundColor: selectedButton === buttonNumber ? '#000000' : '#ffffff',
+              color: selectedButton === buttonNumber ? '#ffffff' : '#000000',
+              border: '1px solid #000000', // Add a border
+              borderRadius: '8px', // Add rounded corners
+              outline: 'none', // Remove outline when focused
+              cursor: 'pointer', // Change cursor on hover
+            }}
+          >
+            {buttonNumber === 1 && 'Projects'}
+            {buttonNumber === 2 && 'Evaluators'}
+            {buttonNumber === 3 && 'Funding platforms'}
+            {buttonNumber === 4 && 'Everyone'}
+          </button>
+        ))}
+      </div>
+
+      {/* Content Area button 1*/}
+      {selectedButton == 1 && (
+        <div style={{
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        marginLeft: 'auto',
+        marginRight: 'auto',
+        padding: '10px',
+        marginTop: '20px',
+        maxWidth: '800px',}}>
+          <div style={{ display: 'flex' }}>
+            <div style={{ width: '33%' }}>
+            <h2 class="heading-font">
+              Projects title
+            </h2>
+            <p class="text-font" style={{maxWidth: '500px', marginLeft: 'auto', marginRight: 'auto'}}>
+              To solve the challenges we face this century, we need scalable and 
+              sustainable financing models for public goods that reward contributors 
+              for the positive impact they create.
+            </p>
+            <div style={{
+              display: 'flex',
+              flexWrap: 'wrap', // Allow wrapping if content overflows
+              justifyContent: 'flex-start', // Align items to the left
+            }}>
+              <a href="#internal-link" className="primaryButton">CTA 1</a>
+              <a href="#internal-link" className="greyButton">CTA 2</a>
+            </div>
+            </div>
+            <div style={{ width: '67%' }}>
+            <img src="/img/grey_bg_roundedcorners.png" alt="placeholder" style={{padding: '0px 10px' }} />
+            </div>
+          </div>
+        </div>
+      )}
+      {/* Content Area button 2*/}
+      {selectedButton == 2 && (
+        <div style={{
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        marginLeft: 'auto',
+        marginRight: 'auto',
+        padding: '10px',
+        marginTop: '20px',
+        maxWidth: '800px',}}>
+          <div style={{ display: 'flex' }}>
+            <div style={{ width: '33%' }}>
+            <h2 class="heading-font">
+              Evaluator title
+            </h2>
+            <p class="text-font" style={{maxWidth: '500px', marginLeft: 'auto', marginRight: 'auto'}}>
+              To solve the challenges we face this century, we need scalable and 
+              sustainable financing models for public goods that reward contributors 
+              for the positive impact they create.
+            </p>
+            <div style={{
+              display: 'flex',
+              flexWrap: 'wrap', // Allow wrapping if content overflows
+              justifyContent: 'flex-start', // Align items to the left
+            }}>
+              <a href="#internal-link" className="primaryButton">CTA 1</a>
+              <a href="#internal-link" className="greyButton">CTA 2</a>
+            </div>
+            </div>
+            <div style={{ width: '67%' }}>
+            <img src="/img/grey_bg_roundedcorners.png" alt="placeholder" style={{padding: '0px 10px' }} />
+            </div>
+          </div>
+        </div>
+      )}
+      {/* Content Area button 3*/}
+      {selectedButton == 3 && (
+        <div style={{
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        marginLeft: 'auto',
+        marginRight: 'auto',
+        padding: '10px',
+        marginTop: '20px',
+        maxWidth: '800px',}}>
+          <div style={{ display: 'flex' }}>
+            <div style={{ width: '33%' }}>
+            <h2 class="heading-font">
+              Funding platform title
+            </h2>
+            <p class="text-font" style={{maxWidth: '500px', marginLeft: 'auto', marginRight: 'auto'}}>
+              To solve the challenges we face this century, we need scalable and 
+              sustainable financing models for public goods that reward contributors 
+              for the positive impact they create.
+            </p>
+            <div style={{
+              display: 'flex',
+              flexWrap: 'wrap', // Allow wrapping if content overflows
+              justifyContent: 'flex-start', // Align items to the left
+            }}>
+              <a href="#internal-link" className="primaryButton">CTA 1</a>
+              <a href="#internal-link" className="greyButton">CTA 2</a>
+            </div>
+            </div>
+            <div style={{ width: '67%' }}>
+            <img src="/img/grey_bg_roundedcorners.png" alt="placeholder" style={{padding: '0px 10px' }} />
+            </div>
+          </div>
+        </div>
+      )}
+      {/* Content Area button 4*/}
+      {selectedButton == 4 && (
+        <div style={{
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        marginLeft: 'auto',
+        marginRight: 'auto',
+        padding: '10px',
+        marginTop: '20px',
+        maxWidth: '800px',}}>
+          <div style={{ display: 'flex' }}>
+            <div style={{ width: '33%' }}>
+            <h2 class="heading-font">
+              Everyone title
+            </h2>
+            <p class="text-font" style={{maxWidth: '500px', marginLeft: 'auto', marginRight: 'auto'}}>
+              To solve the challenges we face this century, we need scalable and 
+              sustainable financing models for public goods that reward contributors 
+              for the positive impact they create.
+            </p>
+            <div style={{
+              display: 'flex',
+              flexWrap: 'wrap', // Allow wrapping if content overflows
+              justifyContent: 'flex-start', // Align items to the left
+            }}>
+              <a href="#internal-link" className="primaryButton">CTA 1</a>
+              <a href="#internal-link" className="greyButton">CTA 2</a>
+            </div>
+            </div>
+            <div style={{ width: '67%' }}>
+            <img src="/img/grey_bg_roundedcorners.png" alt="placeholder" style={{padding: '0px 10px' }} />
+            </div>
+          </div>
+        </div>
+      )}
+
+        {/* Old stuff */}
+        <div className="child" style={{marginTop: '70px'}}>  
           <p class="text-font">
             Hypercerts create interoperability by serving as a single, open, shared, decentralized database for impact claims and funding mechanisms.
           </p>
@@ -122,8 +355,12 @@ function HomepageHeader() {
           </h1>
           </div>
         </div>
-        <div style={{height: '40px'}}>
+
         </div>
+        {/* partner logos */}
+        <div className="child" style={{marginTop: '20px'}}>
+          <SponsorLogos />
+        
       </div>
     </Layout>
   );

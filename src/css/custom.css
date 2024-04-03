@@ -129,13 +129,22 @@
   text-transform: lowercase;
   max-width: 800px;
   text-align: center;
-  margin-top: 30px;
   margin-left: auto; 
   margin-right: auto; 
 }
 
 .title-font {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Instrument-Serif';
+  text-align: center;
+  font-size: 42px;
+  font-weight: 900;
+  line-height: 1.1;
+}
+
+.heading-font {
+  font-family: 'Instrument-Serif';
+  text-align: left;
+  font-size: 30px;
   font-weight: 900;
   line-height: 1.1;
 }
@@ -145,10 +154,19 @@
   font-size: 16px;
   font-weight: 500;
   color: #535353;
+  text-align: left;
+}
+
+.text-centered {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #535353;
+  text-align: center;
 }
 
 .navbar {
-  height: 80px; 
+  height: 50px; 
   box-shadow: none !important;
 }
 
@@ -166,6 +184,14 @@
 .navbar__title {
   font-family: 'Instrument-Serif', serif;
   font-size: 28px;
+  line-height: 1;
+}
+
+.navbar__logo, .navbar__brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: none;
 }
 
 .navbar__logo img, .navbar__brand img {
@@ -196,27 +222,37 @@
 .primaryButton {
   background-color: var(--text-color);
   color: var(--background-color);
-  padding: 10px 15px;
+  padding: 5px 15px;
   margin: 5px;
-  border-radius: 5px;
-  border: 2px solid var(--text-color);
+  border-radius: 8px;
+  border: 0px solid var(--text-color);
   text-decoration: none;
 }
 
 .secondaryButton {
   background-color: transparent;
   color: var(--text-color);
-  padding: 10px 15px;
+  padding: 5dvb 15px;
   margin: 5px;
-  border-radius: 5px;
+  border-radius: 8px;
   border: 2px solid var(--text-color);
+  text-decoration: none;
+}
+
+.greyButton {
+  background-color: #ECECEC;
+  color: var(--text-color);
+  padding: 5px 15px;
+  margin: 5px;
+  border-radius: 8px;
+  border: 0px solid var(--text-color);
   text-decoration: none;
 }
 
 .menuButton {
   background-color: var(--text-color);
   color: var(--background-color);
-  padding: 10px 15px;
+  padding: 5px 10px;
   border-radius: 10px;
   border: 2px solid var(--text-color);
   text-decoration: none;
