@@ -123,10 +123,9 @@
 
 .hero-font {
   font-family: 'Instrument-Serif';
-  font-size: 72px;
+  font-size: 90px;
   font-weight: 500;
   line-height: 1.1;
-  text-transform: lowercase;
   max-width: 800px;
   text-align: center;
   margin-left: auto; 

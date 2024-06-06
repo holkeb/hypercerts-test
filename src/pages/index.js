@@ -35,15 +35,15 @@ function HomepageHeader() {
         <div style={{
           textAlign: 'center', 
           backgroundSize: 'cover',
-          backgroundImage: 'url(/img/hypercerts_key_visual.png)',
+          backgroundImage: 'url(/img/hypercerts_hero_bg.png)',
           backgroundPosition: 'center',
           width: '100%',
           }}>
           <h1 class="hero-font" style={{
           marginTop: '50px',
           }}>
-            Reward and fund impact</h1>
-          <img src="/img/hypercert_example.png" alt="Hypercerts" style={{ maxWidth: '300px', maxHeight: '100%', marginBottom: '30px' }} />
+            Fund and Reward Impact</h1>
+          <img src="/img/hypercert_edgecity.png" alt="Hypercerts" style={{ maxWidth: '250px', maxHeight: '100%', marginBottom: '30px' }} />
         </div>
 
         {/* partner logos */}
@@ -92,11 +92,10 @@ function HomepageHeader() {
         maxWidth: '100%',
         }}>
         <div className="child" style={{
-          marginTop: '70px',
           background: 'linear-gradient(to bottom, white, #ececec)',
           borderRadius: '10px', 
           width: '100%'}}>
-          <img src="/img/hypercert_example.png" alt="Hypercerts" style={{ maxWidth: '300px', maxHeight: '100%' }} />
+          <img src="/img/what_is_a_hypercert_intro.png" alt="Hypercerts" style={{ maxWidth: '100%', maxHeight: '100%' }} />
         </div>
         
         {/* who is hypercerts for */}  
