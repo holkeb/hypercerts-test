@@ -20,17 +20,8 @@ function HomepageHeader() {
   return (
     <Layout
       title="hypercerts overview"
-      description="Reward and fund impact with hypercerts">
-      <div style={{
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
-          justifyContent: 'space-between',
-          marginLeft: 'auto',
-          marginRight: 'auto',
-          marginTop: '20px',
-          maxWidth: '800px',
-        }}>
+      description="Fund and Reward Impact with Hypercerts">
+      <div className="main-body-container">
 
         {/* hero banner */}
         <div style={{
@@ -54,30 +45,20 @@ function HomepageHeader() {
       </div>
 
       {/* Main body */}
-      <div style={{
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'space-between',
-        marginLeft: 'auto',
-        marginRight: 'auto',
-        padding: '10px',
-        marginTop: '20px',
-        maxWidth: '800px',
-        }}>
+      <div className="main-body-container">
 
         {/* longer introduction */}  
-        <div className="child" style={{marginTop: '70px' }}>
+        <div className="child" style={{marginTop: '70px', maxWidth: '700px'}}>
           <h1 class="title-font">
-            Hypercerts enable scalable and sustainable financing models for collective goods
+            Hypercerts enable scalable and sustainable impact funding models
           </h1>
           <p class="text-centered" style={{maxWidth: '500px', marginLeft: 'auto', marginRight: 'auto'}}>
             Every hypercert accounts for a discrete piece 
             of work and represents the impact resulting from that 
-            work. Projects create hypercerts. Funders buy hypercert 
+            work. Projects create hypercerts for their work. Evaluators assess the outputs,
+            outcomes and impact of projects' work. Funders buy hypercert 
             fractions and receive the rights to claim the represented
-            impact. Evaluators create value by assessing the outputs,
-            outcomes and impact of projects' work.
+            impact. 
           </p>
         </div>
       </div>
@@ -144,22 +125,13 @@ function HomepageHeader() {
 
       {/* Content Area button 1*/}
       {selectedButton == 1 && (
-        <div style={{
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'space-between',
-        marginLeft: 'auto',
-        marginRight: 'auto',
-        padding: '10px',
-        marginTop: '20px',
-        maxWidth: '800px',}}>
-          <div style={{ display: 'flex' }}>
-            <div style={{ width: '33%' }}>
+        <div className="main-body-container">
+          <div className="responsive-container2">
+            <div>
             <h2 class="heading-font">
               Sell the impact you created
             </h2>
-            <p class="text-font" style={{maxWidth: '500px', marginLeft: 'auto', marginRight: 'auto'}}>
+            <p class="text-font">
               Create hypercerts that represents the 
               impact your project had. Let credible 
               evaluators confirm the impact. Sell 
@@ -184,22 +156,13 @@ function HomepageHeader() {
       )}
       {/* Content Area button 2*/}
       {selectedButton == 2 && (
-        <div style={{
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'space-between',
-        marginLeft: 'auto',
-        marginRight: 'auto',
-        padding: '10px',
-        marginTop: '20px',
-        maxWidth: '800px',}}>
-          <div style={{ display: 'flex' }}>
-            <div style={{ width: '33%' }}>
+        <div className="main-body-container">
+          <div className="responsive-container2">
+            <div>
             <h2 class="heading-font">
               Buy the impact you care about risk-free
             </h2>
-            <p class="text-font" style={{maxWidth: '500px', marginLeft: 'auto', marginRight: 'auto'}}>
+            <p class="text-font">
               Find projects' hypercerts and access their impact 
               evaluations. Reward them for their past 
               impact. Receive the right to claim the 
@@ -223,22 +186,13 @@ function HomepageHeader() {
       )}
       {/* Content Area button 3*/}
       {selectedButton == 3 && (
-        <div style={{
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'space-between',
-        marginLeft: 'auto',
-        marginRight: 'auto',
-        padding: '10px',
-        marginTop: '20px',
-        maxWidth: '800px',}}>
-          <div style={{ display: 'flex' }}>
-            <div style={{ width: '33%' }}>
+        <div className="main-body-container">
+          <div className="responsive-container2">
+            <div>
             <h2 class="heading-font">
               Get paid for high-quality impact evaluations
             </h2>
-            <p class="text-font" style={{maxWidth: '500px', marginLeft: 'auto', marginRight: 'auto'}}>
+            <p class="text-font">
               Evaluate the work of projects with data
               and your expertise. Improve your evaluation methodology 
               over time. Help funders allocate their funds and get rewarded
@@ -260,22 +214,13 @@ function HomepageHeader() {
       )}
       {/* Content Area button 4*/}
       {selectedButton == 4 && (
-        <div style={{
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'space-between',
-        marginLeft: 'auto',
-        marginRight: 'auto',
-        padding: '10px',
-        marginTop: '20px',
-        maxWidth: '800px',}}>
-          <div style={{ display: 'flex' }}>
-            <div style={{ width: '33%' }}>
+        <div className="main-body-container">
+          <div className="responsive-container2">
+            <div>
             <h2 class="heading-font">
               Become part of the funding network
             </h2>
-            <p class="text-font" style={{maxWidth: '500px', marginLeft: 'auto', marginRight: 'auto'}}>
+            <p class="text-font">
               Integrate hypercerts into your funding platform,
               no matter if you distribute grants, organize
               crowdfunding or run prize competitions. Access 
@@ -297,11 +242,15 @@ function HomepageHeader() {
         </div>
       )}
 
+    <div className="main-body-container">
       <div className="child" style={{
         marginTop: '70px',
         width: '100%',
         padding: '0px 10px',
         }}>
+          <p class="title-font">
+            Articles, Podcasts, and Talks
+          </p>
           <hr></hr>
         </div>
 
@@ -313,9 +262,10 @@ function HomepageHeader() {
           <a href="https://youtu.be/2hOhOdCbBlU?si=CvaAkL4651z3LwvD" target="_blank">
             <img src="/img/davidad_ftc_talk.png" alt="placeholder" style={{padding:'5px 0px 0px 0px', borderRadius:'12px'}} />
           </a> 
-          <p className="greyTag">Video 25min | Jun 2022</p><br></br>
+          <p className="greyTag">Video 18min | Jun 2022</p><br></br>
           <a href="https://youtu.be/2hOhOdCbBlU?si=CvaAkL4651z3LwvD"  target="_blank" class="title-font">On-chain primitives for impact markets</a><br></br>
           <a href="https://twitter.com/davidad"  target="_blank" class="author-font">@davidad</a>
+          <hr class="mobile-only"></hr>
         </div>
         <div className="child">
           <MediaItem
@@ -366,6 +316,7 @@ function HomepageHeader() {
             { name: "@holkexyz", link: "https://twitter.com/holkexyz" }
           ]}
           />
+        </div>
         </div>
         </div>
 

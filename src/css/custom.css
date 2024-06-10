@@ -4,6 +4,18 @@
  * work well for content-centric websites.
  */
 
+ .main-body-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  margin-top: 20px;
+  max-width: 1000px;
+}
+
  .heroBanner {
    padding: 4rem 0;
    text-align: center;
@@ -28,6 +40,66 @@
   flex-wrap: wrap;
   max-width: 100%;
   padding: 0px;
+}
+
+.responsive-container > * {
+  flex: 1 1 50%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .responsive-container {
+    flex-direction: column;
+  }
+
+  .responsive-container > * {
+    flex: 1 1 100%;
+  }
+}
+
+.responsive-container2 {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  padding: 0px;
+}
+
+/* Default to 2 columns */
+.responsive-container2 > * {
+  flex: 1 1 50%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.responsive-container2 > :nth-child(1) {
+  flex: 1 1 33%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.responsive-container2 > :nth-child(2) {
+  flex: 1 1 67%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .responsive-container2 {
+    flex-direction: column;
+  }
+
+  .responsive-container2 > * {
+    flex: 1 1 100%;
+  }
+
+  /* Change order in single-column layout */
+  .responsive-container2 > :nth-child(1) {
+    order: 2;
+  }
+  .responsive-container2 > :nth-child(2) {
+    order: 1;
+  }
 }
 
 .child {
@@ -56,12 +128,6 @@
   right: 0;
   bottom: 0;
   z-index: -1;
-}
-
-@media (max-width: 768px) {
-  .responsive-container {
-    flex-direction: column;
-  }
 }
 
 
@@ -143,11 +209,6 @@
   color: var(--text-color);
 }
 
-.title-font:hover {
-  text-decoration: underline; /* Add underline on hover if desired */
-  color: var(--ifm-color-primary); /* Optional: Change color on hover */
-}
-
 .heading-font {
   font-family: 'Instrument-Serif';
   text-align: left;
@@ -156,11 +217,6 @@
   line-height: 1.10;
   text-decoration: none;
   color: var(--text-color);
-}
-
-.heading-font:hover {
-  text-decoration: underline; /* Add underline on hover if desired */
-  color: var(--ifm-color-primary); /* Optional: Change color on hover */
 }
 
 .author-font {
@@ -305,6 +361,16 @@
   }
 }
 
+.mobile-only {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mobile-only {
+    display: block;
+  }
+}
+
 .highlightButton {
   background-color: var(--highlight-color);
   color: var(--background-color);
@@ -318,3 +384,4 @@
 .image-shadow {
   box-shadow: 0 0px 16px rgba(0, 0, 0, 0.4); /* Horizontal offset, vertical offset, blur radius, and color */
 }
+
