@@ -4,6 +4,7 @@ import Link from '@docusaurus/Link';
 import Layout from '@theme/Layout';
 import HyperboardWidget from '@site/src/components/HyperboardWidget';
 import SponsorLogos from '@site/src/components/SponsorLogos.js';
+import MediaItem from '@site/src/components/MediaItem';
 
 import styles from './index.module.css';
 
@@ -68,12 +69,15 @@ function HomepageHeader() {
         {/* longer introduction */}  
         <div className="child" style={{marginTop: '70px' }}>
           <h1 class="title-font">
-            Hypercerts are a new protocol for funding and rewarding positive impact
+            Hypercerts enable scalable and sustainable financing models for collective goods
           </h1>
           <p class="text-centered" style={{maxWidth: '500px', marginLeft: 'auto', marginRight: 'auto'}}>
-            To solve the challenges we face this century, we need scalable and 
-            sustainable financing models for public goods that reward contributors 
-            for the positive impact they create.
+            Every hypercert accounts for a discrete piece 
+            of work and represents the impact resulting from that 
+            work. Projects create hypercerts. Funders buy hypercert 
+            fractions and receive the rights to claim the represented
+            impact. Evaluators create value by assessing the outputs,
+            outcomes and impact of projects' work.
           </p>
         </div>
       </div>
@@ -131,9 +135,9 @@ function HomepageHeader() {
             }}
           >
             {buttonNumber === 1 && 'Projects'}
-            {buttonNumber === 2 && 'Evaluators'}
-            {buttonNumber === 3 && 'Funding platforms'}
-            {buttonNumber === 4 && 'Everyone'}
+            {buttonNumber === 2 && 'Funders'}
+            {buttonNumber === 3 && 'Evaluators'}
+            {buttonNumber === 4 && 'Funding Platforms'}
           </button>
         ))}
       </div>
@@ -153,20 +157,23 @@ function HomepageHeader() {
           <div style={{ display: 'flex' }}>
             <div style={{ width: '33%' }}>
             <h2 class="heading-font">
-              Projects title
+              Sell the impact you created
             </h2>
             <p class="text-font" style={{maxWidth: '500px', marginLeft: 'auto', marginRight: 'auto'}}>
-              To solve the challenges we face this century, we need scalable and 
-              sustainable financing models for public goods that reward contributors 
-              for the positive impact they create.
+              Create hypercerts that represents the 
+              impact your project had. Let credible 
+              evaluators confirm the impact. Sell 
+              the right to claim this impact to funders
+              and become financially sustainable by 
+              continuously selling your impact.
             </p>
             <div style={{
               display: 'flex',
               flexWrap: 'wrap', // Allow wrapping if content overflows
               justifyContent: 'flex-start', // Align items to the left
             }}>
-              <a href="#internal-link" className="primaryButton">CTA 1</a>
-              <a href="#internal-link" className="greyButton">CTA 2</a>
+              <a href="#internal-link" className="primaryButton">Sell your impact now</a>
+              <a href="#internal-link" className="greyButton">Learn more</a>
             </div>
             </div>
             <div style={{ width: '67%' }}>
@@ -190,20 +197,22 @@ function HomepageHeader() {
           <div style={{ display: 'flex' }}>
             <div style={{ width: '33%' }}>
             <h2 class="heading-font">
-              Evaluator title
+              Buy the impact you care about risk-free
             </h2>
             <p class="text-font" style={{maxWidth: '500px', marginLeft: 'auto', marginRight: 'auto'}}>
-              To solve the challenges we face this century, we need scalable and 
-              sustainable financing models for public goods that reward contributors 
-              for the positive impact they create.
+              Find projects' hypercerts and access their impact 
+              evaluations. Reward them for their past 
+              impact. Receive the right to claim the 
+              impact and build up your impact portfolio 
+              to prove your support of collective goods.
             </p>
             <div style={{
               display: 'flex',
               flexWrap: 'wrap', // Allow wrapping if content overflows
               justifyContent: 'flex-start', // Align items to the left
             }}>
-              <a href="#internal-link" className="primaryButton">CTA 1</a>
-              <a href="#internal-link" className="greyButton">CTA 2</a>
+              <a href="#internal-link" className="primaryButton">Explore hypercerts</a>
+              <a href="#internal-link" className="greyButton">Commit funds</a>
             </div>
             </div>
             <div style={{ width: '67%' }}>
@@ -227,20 +236,20 @@ function HomepageHeader() {
           <div style={{ display: 'flex' }}>
             <div style={{ width: '33%' }}>
             <h2 class="heading-font">
-              Funding platform title
+              Get paid for high-quality impact evaluations
             </h2>
             <p class="text-font" style={{maxWidth: '500px', marginLeft: 'auto', marginRight: 'auto'}}>
-              To solve the challenges we face this century, we need scalable and 
-              sustainable financing models for public goods that reward contributors 
-              for the positive impact they create.
+              Evaluate the work of projects with data
+              and your expertise. Improve your evaluation methodology 
+              over time. Help funders allocate their funds and get rewarded
+              for evaluations that significantly impacted funders' decisions.
             </p>
             <div style={{
               display: 'flex',
               flexWrap: 'wrap', // Allow wrapping if content overflows
               justifyContent: 'flex-start', // Align items to the left
             }}>
-              <a href="#internal-link" className="primaryButton">CTA 1</a>
-              <a href="#internal-link" className="greyButton">CTA 2</a>
+              <a href="#internal-link" className="primaryButton">Become an official evaluator</a>
             </div>
             </div>
             <div style={{ width: '67%' }}>
@@ -264,20 +273,21 @@ function HomepageHeader() {
           <div style={{ display: 'flex' }}>
             <div style={{ width: '33%' }}>
             <h2 class="heading-font">
-              Everyone title
+              Become part of the funding network
             </h2>
             <p class="text-font" style={{maxWidth: '500px', marginLeft: 'auto', marginRight: 'auto'}}>
-              To solve the challenges we face this century, we need scalable and 
-              sustainable financing models for public goods that reward contributors 
-              for the positive impact they create.
+              Integrate hypercerts into your funding platform,
+              no matter if you distribute grants, organize
+              crowdfunding or run prize competitions. Access 
+              projects' previous hypercerts and their evaluations.
             </p>
             <div style={{
               display: 'flex',
               flexWrap: 'wrap', // Allow wrapping if content overflows
               justifyContent: 'flex-start', // Align items to the left
             }}>
-              <a href="#internal-link" className="primaryButton">CTA 1</a>
-              <a href="#internal-link" className="greyButton">CTA 2</a>
+              <a href="#internal-link" className="primaryButton">Integrate hypercerts now</a>
+              <a href="#internal-link" className="greyButton">Learn more</a>
             </div>
             </div>
             <div style={{ width: '67%' }}>
@@ -287,60 +297,79 @@ function HomepageHeader() {
         </div>
       )}
 
-        {/* Old stuff */}
-        <div className="child" style={{marginTop: '70px'}}>  
-          <p class="text-font">
-            Hypercerts create interoperability by serving as a single, open, shared, decentralized database for impact claims and funding mechanisms.
-          </p>
+      <div className="child" style={{
+        marginTop: '70px',
+        width: '100%',
+        padding: '0px 10px',
+        }}>
+          <hr></hr>
         </div>
+
         <div className="responsive-container" style={{
-          alignItems: 'center',
+          alignItems: 'top',
           justifyContent: 'space-between',
         }}>
-        <div className="child">
-            <div style={{textAlign: 'center'}}>
-              <img src="/img/recurring_income.svg" alt="Hypercerts" style={{ maxWidth: '300px', maxHeight: '100%' }} />
-            </div>
-          </div>
-          <div className="child">
-            <h2 class="title-font">Recurring income for public goods</h2>
-            <p class="text-font">
-              Retrospective funding rewards projects for the impact they have created. As long as projects create impact, they can create hypercerts for the impact and get retrospective rewards for these. In contrast to today’s grant systems, projects have recurring income streams.
-            </p>
-          </div>
+        <div className="child" style={{padding:'10px'}}>
+          <a href="https://youtu.be/2hOhOdCbBlU?si=CvaAkL4651z3LwvD" target="_blank">
+            <img src="/img/davidad_ftc_talk.png" alt="placeholder" style={{padding:'5px 0px 0px 0px', borderRadius:'12px'}} />
+          </a> 
+          <p className="greyTag">Video 25min | Jun 2022</p><br></br>
+          <a href="https://youtu.be/2hOhOdCbBlU?si=CvaAkL4651z3LwvD"  target="_blank" class="title-font">On-chain primitives for impact markets</a><br></br>
+          <a href="https://twitter.com/davidad"  target="_blank" class="author-font">@davidad</a>
         </div>
-        <div className="responsive-container" style={{
-          alignItems: 'center',
-          justifyContent: 'space-between',
-        }}>
         <div className="child">
-            <div style={{textAlign: 'center'}}>
-              <img src="/img/increasing_rewards.svg" alt="Hypercerts" style={{ maxWidth: '300px', maxHeight: '100%' }} />
-            </div>
-          </div>
-          <div className="child">
-            <h2 class="title-font">High-potential public goods</h2>
-            <p class="text-font">
-              Buying hypercerts retrospectively allows funders to increase their funding in relation to the impact created, incentivizing projects to maximize their positive impact. Funders benefit from a large positive impact and incur project risks. Retrospective funding encourages high-risk/high-potential public goods.
-            </p>
-          </div>
+          <MediaItem
+          tag="Blogpost | Aug 2022"
+          title="A new primitive for public goods funding"
+          titleLink="https://protocol.ai/blog/hypercert-new-primitive/"
+          authors={[
+            { name: "@holkexyz", link: "https://twitter.com/holkexyz" }
+          ]}
+          />
+          <MediaItem
+          tag="Blogpost | Aug 2022"
+          title="A new primitive for public goods funding"
+          titleLink="https://protocol.ai/blog/hypercert-new-primitive/"
+          authors={[
+            { name: "@holkexyz", link: "https://twitter.com/holkexyz" }
+          ]}
+          />
+          <MediaItem
+          tag="Blogpost | Aug 2022"
+          title="A new primitive for public goods funding"
+          titleLink="https://protocol.ai/blog/hypercert-new-primitive/"
+          authors={[
+            { name: "@holkexyz", link: "https://twitter.com/holkexyz" }
+          ]}
+          />
+          <MediaItem
+          tag="Blogpost | Aug 2022"
+          title="A new primitive for public goods funding"
+          titleLink="https://protocol.ai/blog/hypercert-new-primitive/"
+          authors={[
+            { name: "@holkexyz", link: "https://twitter.com/holkexyz" }
+          ]}
+          />
+          <MediaItem
+          tag="Blogpost | Aug 2022"
+          title="A new primitive for public goods funding"
+          titleLink="https://protocol.ai/blog/hypercert-new-primitive/"
+          authors={[
+            { name: "@holkexyz", link: "https://twitter.com/holkexyz" }
+          ]}
+          />
+          <MediaItem
+          tag="Blogpost | Aug 2022"
+          title="A new primitive for public goods funding"
+          titleLink="https://protocol.ai/blog/hypercert-new-primitive/"
+          authors={[
+            { name: "@holkexyz", link: "https://twitter.com/holkexyz" }
+          ]}
+          />
         </div>
-        <div className="responsive-container" style={{
-          alignItems: 'center',
-          justifyContent: 'space-between',
-        }}>
-        <div className="child">
-            <div style={{textAlign: 'center'}}>
-              <img src="/img/impact_bridge.svg" alt="Hypercerts" style={{ maxWidth: '300px', maxHeight: '100%' }} />
-            </div>
-          </div>
-          <div className="child">
-            <h2 class="title-font">De-risking impact-funding</h2>
-            <p class="text-font">
-              Retrospective funders allocate their funds more effectively as they face less uncertainty about the impact projects had. This is especially important when the impact of public goods doesn't increase linearly. Retrospective funders wouldn’t waste funds by rewarding a project for building half a bridge.
-            </p>
-          </div>
         </div>
+
+{/*
         <div className="transparentContainer" style={{
           display: 'flex',
           alignItems: 'center',
@@ -354,7 +383,7 @@ function HomepageHeader() {
           </h1>
           </div>
         </div>
-
+*/}
         </div>
         {/* partner logos */}
         <div className="child" style={{marginTop: '20px'}}>

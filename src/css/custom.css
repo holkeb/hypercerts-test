@@ -34,6 +34,7 @@
   flex: 1;
   min-width: 300px; /* Adjust based on your content */
   padding: 0px;
+  text-align: left;
 }
 
 .transparentContainer {
@@ -138,6 +139,13 @@
   font-size: 42px;
   font-weight: 900;
   line-height: 1.1;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.title-font:hover {
+  text-decoration: underline; /* Add underline on hover if desired */
+  color: var(--ifm-color-primary); /* Optional: Change color on hover */
 }
 
 .heading-font {
@@ -145,7 +153,28 @@
   text-align: left;
   font-size: 30px;
   font-weight: 900;
+  line-height: 1.10;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.heading-font:hover {
+  text-decoration: underline; /* Add underline on hover if desired */
+  color: var(--ifm-color-primary); /* Optional: Change color on hover */
+}
+
+.author-font {
+  text-align: left;
+  font-size: 16px;
+  font-weight: 500;
   line-height: 1.1;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.author-font:hover {
+  text-decoration: underline; /* Add underline on hover if desired */
+  color: var(--ifm-color-primary); /* Optional: Change color on hover */
 }
 
 .text-font {
@@ -243,6 +272,19 @@
   color: var(--text-color);
   padding: 5px 15px;
   margin: 5px;
+  border-radius: 8px;
+  border: 0px solid var(--text-color);
+  text-decoration: none;
+}
+
+.greyTag {
+  display: inline-block;
+  text-align: left;
+  font-size: 12px;
+  background-color: #ECECEC;
+  color: var(--text-color);
+  padding: 2px 5px;
+  margin: 5px 5pc 5px 0px;
   border-radius: 8px;
   border: 0px solid var(--text-color);
   text-decoration: none;
