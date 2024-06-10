@@ -148,7 +148,7 @@ function HomepageHeader() {
               <a href="#internal-link" className="greyButton">Learn more</a>
             </div>
             </div>
-            <div style={{ width: '67%' }}>
+            <div>
             <img src="/img/grey_bg_roundedcorners.png" alt="placeholder" style={{padding: '0px 10px' }} />
             </div>
           </div>
@@ -178,7 +178,7 @@ function HomepageHeader() {
               <a href="#internal-link" className="greyButton">Commit funds</a>
             </div>
             </div>
-            <div style={{ width: '67%' }}>
+            <div>
             <img src="/img/grey_bg_roundedcorners.png" alt="placeholder" style={{padding: '0px 10px' }} />
             </div>
           </div>
@@ -206,7 +206,7 @@ function HomepageHeader() {
               <a href="#internal-link" className="primaryButton">Become an official evaluator</a>
             </div>
             </div>
-            <div style={{ width: '67%' }}>
+            <div>
             <img src="/img/grey_bg_roundedcorners.png" alt="placeholder" style={{padding: '0px 10px' }} />
             </div>
           </div>
@@ -235,7 +235,7 @@ function HomepageHeader() {
               <a href="#internal-link" className="greyButton">Learn more</a>
             </div>
             </div>
-            <div style={{ width: '67%' }}>
+            <div>
             <img src="/img/grey_bg_roundedcorners.png" alt="placeholder" style={{padding: '0px 10px' }} />
             </div>
           </div>
