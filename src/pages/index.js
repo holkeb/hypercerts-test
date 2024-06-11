@@ -49,7 +49,7 @@ function HomepageHeader() {
 
         {/* longer introduction */}  
         <div className="child" style={{marginTop: '70px', maxWidth: '700px'}}>
-          <h1 class="title-font">
+          <h1 class="title-font" style={{textAlign: 'center'}}>
             Hypercerts enable scalable and sustainable impact funding models
           </h1>
           <p class="text-centered" style={{maxWidth: '500px', marginLeft: 'auto', marginRight: 'auto'}}>
@@ -152,7 +152,7 @@ function HomepageHeader() {
             </div>
             </div>
             <div>
-            <img src="/img/hypercerts_for_projects.png" alt="placeholder" style={{padding: '0px 10px' }} />
+            <img src="/img/hypercerts_for_projects.png" alt="placeholder" style={{padding: '0px 10px', borderRadius:'24px' }} />
             </div>
           </div>
         </div>
@@ -182,7 +182,7 @@ function HomepageHeader() {
             </div>
             </div>
             <div>
-            <img src="/img/hypercerts_for_funders.png" alt="placeholder" style={{padding: '0px 10px' }} />
+            <img src="/img/hypercerts_for_funders.png" alt="placeholder" style={{padding: '0px 10px', borderRadius:'24px' }} />
             </div>
           </div>
         </div>
@@ -210,7 +210,7 @@ function HomepageHeader() {
             </div>
             </div>
             <div>
-            <img src="/img/hypercerts_for_evaluators.png" alt="placeholder" style={{padding: '0px 10px' }} />
+            <img src="/img/hypercerts_for_evaluators.png" alt="placeholder" style={{padding: '0px 10px', borderRadius:'24px' }} />
             </div>
           </div>
         </div>
@@ -239,7 +239,7 @@ function HomepageHeader() {
             </div>
             </div>
             <div>
-            <img src="/img/hypercerts_for_funding_platforms.png" alt="placeholder" style={{padding: '0px 10px' }} />
+            <img src="/img/hypercerts_for_funding_platforms.png" alt="placeholder" style={{padding: '0px 10px', borderRadius:'24px' }} />
             </div>
           </div>
         </div>
@@ -251,7 +251,7 @@ function HomepageHeader() {
         width: '100%',
         padding: '0px 10px',
         }}>
-          <p class="title-font">
+          <p class="title-font" style={{textAlign: 'center'}}>
             Articles, Podcasts, and Talks
           </p>
           <hr></hr>
@@ -338,12 +338,11 @@ function HomepageHeader() {
           </div>
         </div>
 */}
-        </div>
+      </div>
         {/* partner logos */}
         <div className="child" style={{marginTop: '50px'}}>
           <SponsorLogos />
-        
-      </div>
+        </div>
     </Layout>
   );
 }

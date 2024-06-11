@@ -10,19 +10,10 @@ function HomepageHeader() {
     <Layout
       title="hypercerts overview"
       description="Hypercerts are the web3 standard for impact certificates <head />">
-      <div style={{
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
-          justifyContent: 'space-between',
-          marginLeft: 'auto',
-          marginRight: 'auto',
-          marginTop: '20px',
-          maxWidth: '800px',
-        }}>
+      <div className='main-body-container'>
         <div className="child">
-          <h1 class="hero-font">
-          Hypercerts create dynamic funding networks
+          <h1 class="title-font" style={{textAlign:'center'}}>
+          Become part of the future of impact funding networks
           </h1>
           <p class="text-font">
             Every hypercert is a public claim on a discrete piece of work and impact resulting from that work. Projects can create hypercerts and distribute them to contributors. Funders can own hypercert fractions — and the rights that come with them. Impact evaluators can create value for projects and funders by assessing the quality of hypercerts and offering ratings.

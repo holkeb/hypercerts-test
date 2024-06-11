@@ -77,9 +77,10 @@ const config = {
           src: 'img/hypercerts_logo_b_transparent.png',
         },
         items: [
+          /*
           {
-            to: '/how-it-works',
-            label: 'How it works',
+            to: '/impact-markets',
+            label: 'Impact Markets',
             position: 'left',
           },
           {
@@ -87,11 +88,17 @@ const config = {
             label: 'Ecosystem',
             position: 'left',
           },
+          */
           {
             type: 'docSidebar',
             sidebarId: 'mySidebar',
             position: 'left',
             label: 'Docs',
+          },
+          {
+            to: '/contact',
+            label: 'Contact',
+            position: 'left',
           },
           {
             href: 'https://hypercerts.org/app/create#name=The%20name%20of%20your%20hypercert&logoUrl=https%3A%2F%2Fi.imgur.com%2FsDQhp3Y.png&bannerUrl=https%3A%2F%2Fi.imgur.com%2FwsM3fWd.jpeg&impactScopes%5B0%5D=all&impactTimeEnd=indefinite&workScopes=your%20project&workTimeStart=2023-01-01&rights%5B0%5D=Public%20Display&backgroundColor=blue&backgroundVectorArt=contours',
