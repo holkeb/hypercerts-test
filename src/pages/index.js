@@ -21,27 +21,61 @@ function HomepageHeader() {
     <Layout
       title="hypercerts overview"
       description="Fund and Reward Impact with Hypercerts">
-      <div className="main-body-container">
+      <div>
 
         {/* hero banner */}
         <div style={{
+          maxWidth: '1000px',
+          margin: '0 auto',
           textAlign: 'center', 
           backgroundSize: 'cover',
           backgroundImage: 'url(/img/hypercerts_hero_bg.png)',
           backgroundPosition: 'center',
-          width: '100%',
           }}>
           <h1 class="hero-font" style={{
-          marginTop: '50px',
+          paddingTop: '50px',
           }}>
             Fund and Reward Impact</h1>
-          <img src="/img/hypercert_edgecity.png" alt="Hypercerts" style={{ maxWidth: '250px', maxHeight: '100%', marginBottom: '30px' }} />
+          <img src="/img/hypercert_edgecity.png" alt="Hypercerts" style={{ maxWidth: '250px', maxHeight: '100%', marginBottom: '50px' }} />
         </div>
 
-        {/* partner logos */}
+        {/* partner logos 
         <div className="child" style={{marginTop: '0px'}}>
           <SponsorLogos />
         </div>
+        */}
+<div id="container" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap', padding: '0px'}}>
+  <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0px', padding: '0px', justifyContent: 'center', alignItems: 'center' }}>
+    <a href="https://www.protocol.ai" className="button" target="_blank" rel="noopener noreferrer">
+      <img src="/img/protocollabs_logo.png" alt="Protocol Labs logo" className="button-img" />
+    </a>
+    <a href="https://www.optimism.io/" className="button" target="_blank" rel="noopener noreferrer">
+      <img src="/img/optimism_logo.png" alt="Optimism logo" className="button-img" />
+    </a>
+    <a href="https://octant.build/" className="button" target="_blank" rel="noopener noreferrer">
+      <img src="/img/octant_logo.png" alt="Octant logo" className="button-img" />
+    </a>
+    <a href="https://www.gitcoin.co/" className="button" target="_blank" rel="noopener noreferrer">
+      <img src="/img/gitcoin_logo.png" alt="Gitcoin logo" className="button-img" style={{ width: '70%' }} />
+    </a>
+    <a href="https://fundingthecommons.io/" className="button" target="_blank" rel="noopener noreferrer">
+      <img src="/img/fundingthecommons_logo.png" alt="Funding the Commons logo" className="button-img" style={{ height: '70%' }} />
+    </a>
+    <a href="https://www.opensource.observer/" className="button" target="_blank" rel="noopener noreferrer">
+      <img src="/img/opensourceobserver_logo.png" alt="Open Source Observer logo" className="button-img" />
+    </a>
+    <a href="https://www.raidguild.org/" className="button" target="_blank" rel="noopener noreferrer">
+      <img src="/img/raidguild_logo.webp" alt="RaidGuild logo" className="button-img" style={{ height: '60%' }} />
+    </a>
+    <a href="https://www.raidguild.org/" className="button" target="_blank" rel="noopener noreferrer">
+      <img src="/img/zuzalu_logo.png" alt="RaidGuild logo" className="button-img" />
+    </a>
+    <a href="https://www.raidguild.org/" className="button" target="_blank" rel="noopener noreferrer">
+      <img src="/img/edgecity_logo.png" alt="RaidGuild logo" className="button-img" />
+    </a>
+  </div>
+</div>
+
       </div>
 
       {/* Main body */}
