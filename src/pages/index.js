@@ -67,11 +67,11 @@ function HomepageHeader() {
     <a href="https://www.raidguild.org/" className="button" target="_blank" rel="noopener noreferrer">
       <img src="/img/raidguild_logo.webp" alt="RaidGuild logo" className="button-img" style={{ height: '60%' }} />
     </a>
-    <a href="https://www.raidguild.org/" className="button" target="_blank" rel="noopener noreferrer">
-      <img src="/img/zuzalu_logo.png" alt="RaidGuild logo" className="button-img" />
+    <a href="https://www.zuzalu.city/" className="button" target="_blank" rel="noopener noreferrer">
+      <img src="/img/zuzalu_logo.png" alt="Zuzalu logo" className="button-img" />
     </a>
-    <a href="https://www.raidguild.org/" className="button" target="_blank" rel="noopener noreferrer">
-      <img src="/img/edgecity_logo.png" alt="RaidGuild logo" className="button-img" />
+    <a href="https://www.edgecity.live/" className="button" target="_blank" rel="noopener noreferrer">
+      <img src="/img/edgecity_logo.png" alt="EdgeCity logo" className="button-img" />
     </a>
   </div>
 </div>
