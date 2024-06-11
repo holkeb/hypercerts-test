@@ -76,13 +76,16 @@ function HomepageHeader() {
         marginTop: '20px',
         maxWidth: '100%',
         }}>
-        <div className="child" style={{
+        <div style={{
           background: 'linear-gradient(to bottom, white, #ececec)',
           borderRadius: '10px', 
-          width: '100%'}}>
+          width: '100%'
+        }}>
+        <picture>
+          <source media="(max-width: 768px)" srcSet="/img/what_is_a_hypercert_intro_mobile.png" />
           <img src="/img/what_is_a_hypercert_intro.png" alt="Hypercerts" style={{ maxWidth: '100%', maxHeight: '100%' }} />
-        </div>
-        
+        </picture>
+    </div>
         {/* who is hypercerts for */}  
         <div className="child" style={{
         marginTop: '70px',
@@ -149,7 +152,7 @@ function HomepageHeader() {
             </div>
             </div>
             <div>
-            <img src="/img/grey_bg_roundedcorners.png" alt="placeholder" style={{padding: '0px 10px' }} />
+            <img src="/img/hypercerts_for_projects.png" alt="placeholder" style={{padding: '0px 10px' }} />
             </div>
           </div>
         </div>
@@ -179,7 +182,7 @@ function HomepageHeader() {
             </div>
             </div>
             <div>
-            <img src="/img/grey_bg_roundedcorners.png" alt="placeholder" style={{padding: '0px 10px' }} />
+            <img src="/img/hypercerts_for_funders.png" alt="placeholder" style={{padding: '0px 10px' }} />
             </div>
           </div>
         </div>
@@ -207,7 +210,7 @@ function HomepageHeader() {
             </div>
             </div>
             <div>
-            <img src="/img/grey_bg_roundedcorners.png" alt="placeholder" style={{padding: '0px 10px' }} />
+            <img src="/img/hypercerts_for_evaluators.png" alt="placeholder" style={{padding: '0px 10px' }} />
             </div>
           </div>
         </div>
@@ -236,7 +239,7 @@ function HomepageHeader() {
             </div>
             </div>
             <div>
-            <img src="/img/grey_bg_roundedcorners.png" alt="placeholder" style={{padding: '0px 10px' }} />
+            <img src="/img/hypercerts_for_funding_platforms.png" alt="placeholder" style={{padding: '0px 10px' }} />
             </div>
           </div>
         </div>
@@ -337,7 +340,7 @@ function HomepageHeader() {
 */}
         </div>
         {/* partner logos */}
-        <div className="child" style={{marginTop: '20px'}}>
+        <div className="child" style={{marginTop: '50px'}}>
           <SponsorLogos />
         
       </div>
