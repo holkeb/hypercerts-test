@@ -104,8 +104,9 @@
 
 .responsive-container3 {
   display: flex;
+  width: 100%;
   justify-content: center;
-  align-items: left;
+  align-items: right;
   height: 100%;
   flex-wrap: wrap;
   max-width: 100%;
@@ -407,6 +408,12 @@
   .mobile-only {
     display: block;
   }
+}
+
+.highlight {
+  background-color: rgb(231, 231, 231); /* Change this color to whatever you prefer */
+  padding: 0 5px;
+  border-radius: 4px;
 }
 
 .highlightButton {
