@@ -38,10 +38,10 @@ function HomepageHeader() {
         </div>
         <div style={{marginTop: '40px', maxWidth: '600px'}}>
           <h3>Use hypercerts</h3>
-          <p>Do you want to get involved as a funder, evaluator or project? Fill out this form or email us at <a href="mailto:team@hypercerts.org">team@hypercerts.org</a>.</p>
+          <p>Do you want to get involved as a funder, evaluator or project? Fill out <a href="https://form.feathery.io/to/kV8E0l" target='_blank'>this form</a> or email us at <a href="mailto:team@hypercerts.org">team@hypercerts.org</a>.</p>
           <h3>Stay informed</h3>
           <p>Join our <a href="https://t.me/+YF9AYb6zCv1mNDJi" target="_blank" rel="noopener noreferrer">Telegram Group</a> to stay up to date.</p>
-          <p>And find your way to our <a href="https://github.com/hypercerts-org/hypercerts" target="_blank" rel="noopener noreferrer">GitHub repositories</a> to follow our technical development.</p>
+          <p>And find your way to our <a href="https://github.com/hypercerts-org/hypercerts" target="_blank" rel="noopener noreferrer">GitHub</a> to follow our technical development.</p>
           <h3>Get support</h3>
           <p>Need help? Join our <a href="https://discord.gg/UZt8cBnP4w" target="_blank" rel="noopener noreferrer">Discord</a> and post in the help forum.</p>
         </div>
