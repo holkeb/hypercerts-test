@@ -181,7 +181,7 @@ function HomepageHeader() {
               flexWrap: 'wrap', // Allow wrapping if content overflows
               justifyContent: 'flex-start', // Align items to the left
             }}>
-              <a href="#internal-link" className="primaryButton">Sell your impact now</a>
+              <a href="https://form.feathery.io/to/kV8E0l" className="primaryButton" target="_blank">Sell your impact now</a>
               <a href="#internal-link" className="greyButton">Learn more</a>
             </div>
             </div>
@@ -212,7 +212,7 @@ function HomepageHeader() {
               justifyContent: 'flex-start', // Align items to the left
             }}>
               <a href="#internal-link" className="primaryButton">Explore hypercerts</a>
-              <a href="#internal-link" className="greyButton">Commit funds</a>
+              <a href="https://form.feathery.io/to/kV8E0l" className="greyButton" target="_blank">Contact us</a>
             </div>
             </div>
             <div>
@@ -240,7 +240,7 @@ function HomepageHeader() {
               flexWrap: 'wrap', // Allow wrapping if content overflows
               justifyContent: 'flex-start', // Align items to the left
             }}>
-              <a href="#internal-link" className="primaryButton">Become an official evaluator</a>
+              <a href="https://form.feathery.io/to/kV8E0l" className="primaryButton" target="_blank">Become an official evaluator</a>
             </div>
             </div>
             <div>
@@ -268,7 +268,7 @@ function HomepageHeader() {
               flexWrap: 'wrap', // Allow wrapping if content overflows
               justifyContent: 'flex-start', // Align items to the left
             }}>
-              <a href="#internal-link" className="primaryButton">Integrate hypercerts now</a>
+              <a href="https://form.feathery.io/to/kV8E0l" className="primaryButton" target="_blank">Integrate hypercerts now</a>
               <a href="#internal-link" className="greyButton">Learn more</a>
             </div>
             </div>

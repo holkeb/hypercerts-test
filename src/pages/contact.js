@@ -33,7 +33,7 @@ function HomepageHeader() {
             </h1>
           </div>
           <div>
-            <img src="/img/grey_bg_roundedcorners.png" alt="placeholder" style={{padding: '0px 10px', borderRadius:'24px' }} />
+            <img src="/img/contact.png" alt="placeholder" style={{padding: '0px 10px', borderRadius:'24px' }} />
           </div>        
         </div>
         <div style={{marginTop: '40px', maxWidth: '600px'}}>
