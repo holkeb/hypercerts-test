@@ -122,16 +122,12 @@ const config = {
             title: 'Site',
             items: [
               {
-                label: 'Overview',
+                label: 'Home',
                 to: '/',
               },
               {
-                label: 'Ecosystem',
-                to: '/ecosystem',
-              },
-              {
-                label: 'Contributors',
-                to: '/contributors',
+                label: 'Contact',
+                to: '/contact',
               },
               {
                 label: 'Docs',

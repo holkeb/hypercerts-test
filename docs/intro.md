@@ -1,5 +1,5 @@
 ---
-title: What Are Hypercerts?
+title: Introduction
 id: intro
 ---
 

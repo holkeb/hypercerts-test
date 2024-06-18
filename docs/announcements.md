@@ -1,5 +1,5 @@
 ---
-title: Regular Announcements
+title: Announcements
 id: announcements
 ---
 
@@ -33,22 +33,42 @@ Next developments
 ## 2024 Mar Update
 
 ### New developments
-- HIP: Introduction of the public Hypercerts Improvement Process (HIP) in order to become more transparent in our work at the Hypercerts Foundation and to allow the community to propose improvement and contribute: GitHub - hypercerts-org/HIPs: Hypercerts improvement proposals
-- Hypercerts Ecosystem: Organization of a funding round for the Hypercerts Ecosystem along the Gitcoin Grants Round 20. We want to enable more projects to integrate and build with hypercerts to realize the vision of an interconnected, dynamic funding network: GG20 Proposal: Hypercerts Ecosystem - 🤖 DAO Governance and Vision - Gitcoin Governance
-- Evaluations: Implementation of EAS evaluations for hypercerts - currently in QA: [HIP-1] Implement EAS evaluations for hypercerts · hypercerts-org/HIPs · Discussion #1 · GitHub
-- VoiceDeck: Support of VoiceDeck to build their funding mechanism for decentralized journalism on the hypercerts marketplace – currently in QA
-- Hyperboards: Hyperboards functionality and design were updated and pilots run with libp2p, SciOS 2024, and ZuConnect Istanbul 3
-- Retroactive funding: Conceptual refinement of retroactive funding with hypercerts: Retroactive funding with hypercerts · hypercerts-org/HIPs · Discussion #6 · GitHub
+- HIP: Introduction of the public Hypercerts Improvement Process (HIP) in order to become more transparent in our work at the Hypercerts Foundation and to allow the community to propose improvement and contribute: https://github.com/hypercerts-org/HIPs
+- Hypercerts Ecosystem: Organization of a funding round for the Hypercerts Ecosystem along the Gitcoin Grants Round 20. We want to enable more projects to integrate and build with hypercerts to realize the vision of an interconnected, dynamic funding network: GG20 Proposal: https://gov.gitcoin.co/t/gg20-proposal-hypercerts-ecosystem/18319
+- Evaluations: Implementation of EAS evaluations for hypercerts - currently in QA: https://github.com/hypercerts-org/HIPs/discussions/1
+- VoiceDeck: Support of [VoiceDeck](https://voicedeck.org/) to build their funding mechanism for decentralized journalism on the hypercerts marketplace – currently in QA
+- Hyperboards: Hyperboards functionality and design were updated and pilots run with libp2p, SciOS 2024, and ZuConnect Istanbul 
+- Retroactive funding: Conceptual refinement of retroactive funding with hypercerts: https://github.com/hypercerts-org/HIPs/discussions/6
 - Redesign: Brand and website redesign in progress
 
 ### Roadmap
-- EasyRetroPGF: We plan to integrate hypercerts with EasyRetroPGF to enable projects to apply for retroactive funding with hypercerts and funders to be recognized by receiving hypercerts. Ultimately, we aim to allow rewarding early financial and non-financial contributors by later retroactive funding and use hypercerts to make this process transparent.
-- Multi-chain support: Implementation of full multi-chain support - currently work in progress: [HIP-2] WIP: Graph & SDK multichain support · hypercerts-org/HIPs · Discussion #2 · GitHub
+- EasyRetroPGF: We plan to integrate hypercerts with [EasyRetroPGF](https://easyretropgf.xyz/) to enable projects to apply for retroactive funding with hypercerts and funders to be recognized by receiving hypercerts. Ultimately, we aim to allow rewarding early financial and non-financial contributors by later retroactive funding and use hypercerts to make this process transparent.
+- Multi-chain support: Implementation of full multi-chain support - currently work in progress: https://github.com/hypercerts-org/HIPs/discussions/2
 - Marketplace features: VoiceDeck release in the coming weeks
 - Evaluations: Extending the evaluations as described in HIP 1 above to allow evaluators to submit data based on specified templates for their impact domain.
-- Flexible metadata: We plan to allow any EAS attestation to serve as the metadata for a hypercert, such that the metadata is more flexible, EAS tooling can be used, and integrations become simpler: EAS as metadata · hypercerts-org/HIPs · Discussion #4 · GitHub
-- Revamp front-end: We are updating the website and split the general hypercert content from the web3 app: [HIP-XXX] Revamp FE and harmonize apps · hypercerts-org/HIPs · Discussion #5 · GitHub
+- Flexible metadata: We plan to allow any EAS attestation to serve as the metadata for a hypercert, such that the metadata is more flexible, EAS tooling can be used, and integrations become simpler: https://github.com/hypercerts-org/HIPs/discussions/4
+- Revamp front-end: We are updating the website and split the general hypercert content from the web3 app: https://github.com/hypercerts-org/HIPs/discussions/5
 - Integrations: We’ll support funding platforms to integrate hypercerts. If you are interested in using hypercerts, please write us at team [at] hypercerts.org
+
+## An Impactful Year 2023
+
+> Hypercerts are a new token standard for tracking and rewarding positive impact.
+
+Gm gm. We’re wishing you an impactful 2024. We’re excited for the things ahead!
+
+2023 has been a year of maturing the foundations laid by the release of the protocol. Together with Grants Stack, Funding the Commons, da0, Zuzalu and many other partners, we’ve successfully run a set of hypercerts pilots. We are grateful for our partners and the enthusiasm of their communities about hypercerts. At every event, we feel the positive energy about hypercerts and about the value mechanism they can unlock.
+
+At the end of the year, we started developing the hypercert marketplace, which will be released on Sepolia later this week. The marketplace is a fork of LooksRare with modifications to add native support for hypercerts. Thanks to their high quality open source code we were able to use both their exchange contracts as well as the SDK. Special credits go to [Trust Security](https://x.com/trust__90) for not only thoroughly reviewing the changes we’ve made to the stack, but also for going beyond their scope to help us improve our protocol.
+
+To help developers get onboarded with our tec,h we’ve released a [Next.JS starter app](https://github.com/hypercerts-org/hypercert-nextjs-chakra-starter), a repo with minimal [demo apps](https://github.com/hypercerts-org/demo-apps) for JS, TS on both server and client side, and of course, the [hypercerts SDK v1](https://www.npmjs.com/package/@hypercerts-org/sdk). The SDK provides methods and utilities for minting and claiming hypercerts, validating datasets, and uploading to and fetching from IPFS.
+
+All of this work is supported by GG19, the first Octant epoch, Optimism’s retroPGF and of course Protocol Labs. A big thank you to all supporters.
+
+In the next months, we’ll work with close collaborators to build out the evaluation functionalities and provide support to projects that want to integrate hypercerts into their funding systems (similar to how we are integrating hypercerts with Gitcoin) or want to build new applications using hypercerts. If you want to build on top of the hypercerts protocol, please get in contact with us.
+
+Excited and grateful,
+
+The hypercerts team
 
 ## 2023 Dec Update
 
@@ -64,7 +84,7 @@ Next developments
 - Pilot of hyperboards: We’ll pilot how to encourage funding by recognizing who contributed financially and non-financially to projects or events.
 - Evaluations: We’ll build on the Ethereum Attestation Service (EAS) and the work of https://gitcoinreviews.co/ who have already started a review application for hypercerts. The goal is to allow attestations and evaluations for hypercerts, such that they can be used via user-generated templates for any impact domain.
 - Integrations: We’ll support funding platforms to integrate hypercerts. If you are interested in using hypercerts, please write us at team [at] hypercerts.org
-- Maintenance and user support: Not a usual roadmap item, but included here to appreciate the work that goes into this, especially as the code-base and use cases increase :slight_smile:
+- Maintenance and user support: Not a usual roadmap item, but included here to appreciate the work that goes into this, especially as the code-base and use cases increase 🙂
 
 
 
