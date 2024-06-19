@@ -16,16 +16,16 @@ const sidebars = {
   mySidebar: [
     {
       type: "doc",
-      id: "announcements",
+      id: "intro",
     },
     {
       type: "doc",
-      id: "intro",
+      id: "announcements",
     },
     {
       type: "category",
       label: "Vision & Whitepaper",
-      collapsed: false,
+      collapsed: true,
       items: [
         {
           type: "doc",
@@ -46,6 +46,40 @@ const sidebars = {
         {
           type: "doc",
           id: "whitepaper/retrospective-funding",
+        },
+      ],
+    },
+    {
+      type: "category",
+      label: "Minting Guide",
+      collapsed: true,
+      items: [
+        {
+          type: "doc",
+          id: "minting-guide/minting-guide-start",
+        },
+        {
+          type: "doc",
+          id: "minting-guide/step-by-step",
+        },
+      ],
+    },
+    {
+      type: "category",
+      label: "Implementation",
+      collapsed: true,
+      items: [
+        {
+          type: "doc",
+          id: "implementation/token-standard",
+        },
+        {
+          type: "doc",
+          id: "implementation/metadata",
+        },
+        {
+          type: "doc",
+          id: "implementation/glossary",
         },
       ],
     },
@@ -122,50 +156,12 @@ const sidebars = {
       ],
     },
     {
-      type: "category",
-      label: "Minting Guide",
-      collapsed: true,
-      items: [
-        {
-          type: "doc",
-          id: "minting-guide/minting-guide-start",
-        },
-        {
-          type: "doc",
-          id: "minting-guide/step-by-step",
-        },
-        {
-          type: "doc",
-          id: "minting-guide/gitcoin-round",
-        },
-      ],
-    },
-    {
-      type: "category",
-      label: "Implementation",
-      collapsed: true,
-      items: [
-        {
-          type: "doc",
-          id: "implementation/token-standard",
-        },
-        {
-          type: "doc",
-          id: "implementation/metadata",
-        },
-        {
-          type: "doc",
-          id: "implementation/glossary",
-        },
-      ],
-    },
-    {
       type: "doc",
       id: "faq",
     },
     {
       type: "doc",
-      id: "further-resources",
+      id: "about",
     },
   ],
 };

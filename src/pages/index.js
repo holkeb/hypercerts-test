@@ -29,7 +29,7 @@ function HomepageHeader() {
           margin: '0 auto',
           textAlign: 'center', 
           backgroundSize: 'cover',
-          backgroundImage: 'url(/img/hypercerts_hero_bg.png)',
+          backgroundImage: 'url(/img/hypercerts_hero_bg.svg)',
           backgroundPosition: 'center',
           }}>
           <h1 class="hero-font" style={{
