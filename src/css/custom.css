@@ -230,10 +230,9 @@
 
 .hero-font {
   font-family: 'Instrument-Serif';
-  font-size: 90px;
+  font-size: 160px;
   font-weight: 500;
-  line-height: 1.1;
-  max-width: 800px;
+  line-height: 1;
   text-align: center;
   margin-left: auto; 
   margin-right: auto; 
@@ -241,9 +240,18 @@
 
 .title-font {
   font-family: 'Instrument-Serif';
-  font-size: 42px;
-  font-weight: 900;
-  line-height: 1.1;
+  font-size: 72px;
+  font-weight: 500;
+  line-height: 1;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.title-font-sm {
+  font-family: 'Instrument-Serif';
+  font-size: 46px;
+  font-weight: 500;
+  line-height: 1;
   text-decoration: none;
   color: var(--text-color);
 }
@@ -252,8 +260,8 @@
   font-family: 'Instrument-Serif';
   text-align: left;
   font-size: 30px;
-  font-weight: 900;
-  line-height: 1.10;
+  font-weight: 500;
+  line-height: 1;
   text-decoration: none;
   color: var(--text-color);
 }

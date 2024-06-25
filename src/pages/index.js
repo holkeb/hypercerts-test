@@ -25,10 +25,10 @@ function HomepageHeader() {
 
         {/* hero banner */}
         <div style={{
-          maxWidth: '1000px',
           margin: '0 auto',
           textAlign: 'center', 
-          backgroundSize: 'cover',
+          backgroundSize: 'auto',
+          backgroundRepeat: 'no-repeat',
           backgroundImage: 'url(/img/hypercerts_hero_bg.svg)',
           backgroundPosition: 'center',
           }}>
@@ -36,7 +36,7 @@ function HomepageHeader() {
           paddingTop: '50px',
           }}>
             Fund and Reward Impact</h1>
-          <img src="/img/hypercert_AI_Safety2.png" alt="Hypercerts" style={{ maxWidth: '250px', maxHeight: '100%', marginBottom: '50px' }} />
+          <img src="/img/hypercert_AI_Safety3.png" alt="Hypercerts" style={{ maxWidth: '250px', maxHeight: '100%', marginBottom: '50px' }} />
         </div>
 
         {/* partner logos 
@@ -301,7 +301,7 @@ function HomepageHeader() {
           </a> 
           <p className="greyTag" style={{ margin: '0 5px 0 0' }}>Talk 18min</p>
           <p className="greyTag" style={{ margin: '0' }}>Jun 2022 | Funding the Commons NYC</p><br></br>
-          <a href="https://youtu.be/2hOhOdCbBlU?si=CvaAkL4651z3LwvD"  target="_blank" class="title-font">On-chain Primitives for Impact Markets</a><br></br>
+          <a href="https://youtu.be/2hOhOdCbBlU?si=CvaAkL4651z3LwvD"  target="_blank" class="title-font-sm">On-chain Primitives for Impact Markets</a><br></br>
           <a href="https://twitter.com/davidad"  target="_blank" class="author-font">@davidad</a>
           <hr class="mobile-only"></hr>
         </div>
